@@ -120,8 +120,12 @@ add_action( 'widgets_init', 'lauradarsie_widgets_init' );
  * Enqueue scripts and styles.
  */
 function lauradarsie_scripts() {
-	wp_enqueue_style( 'lauradarsie-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'lauradarsie-fonts', 'https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap' );
+	wp_enqueue_style( 'lauradarsie-base-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'lauradarsie-custom-style', get_template_directory_uri() . '/lauradarsie.css' );
+
+	wp_enqueue_script( 'lauradarsie-custom-js', get_template_directory_uri() . '/js/lauradarsie.js', array(), '20151215', true );
 	wp_enqueue_script( 'lauradarsie-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'lauradarsie-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -135,7 +139,7 @@ add_action( 'wp_enqueue_scripts', 'lauradarsie_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+// require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -159,3 +163,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+show_admin_bar(false);
