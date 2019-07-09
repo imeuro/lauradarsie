@@ -3,10 +3,6 @@ body {
 }
 a { color: #E67765; }
 
-#page {
-    margin-left: 10px;
-    margin-right: 10px;
-}
 .site-header {
     position: relative;
     width: 100%;
@@ -15,8 +11,6 @@ a { color: #E67765; }
     background: url(./images/lauradarsie-hero-img.png) no-repeat center center transparent;
     background-size: cover;
     min-height: 470px;
-    margin-right: -10px;
-    margin-left: -10px;
 }
 .site-title a {
     padding: 0 10px;
@@ -141,4 +135,30 @@ button.menu-toggle:hover {
     color: #000000;
     width: auto;
     margin: 0 auto;
+}
+
+
+
+
+#content {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.site-footer {
+    height: 40px;
+    width: 100%;
+    background: #E67765;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFF;
 }
