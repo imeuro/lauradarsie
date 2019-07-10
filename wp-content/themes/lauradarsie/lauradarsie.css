@@ -180,7 +180,28 @@ button.menu-toggle:hover {
     margin: 0;
     list-style: none;
 }
-
+.recent-item a {
+    text-decoration: none;
+}
+.recent-item-date {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E67765;
+}
+.recent-item-title {
+    color: #000;
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #222121;
+}
 
 
 
