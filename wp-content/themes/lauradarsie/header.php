@@ -36,7 +36,7 @@
 				if ( $lauradarsie_description || is_customize_preview() ) :
 					?>
 					<p class="site-description"><?php echo $lauradarsie_description; /* WPCS: xss ok. */ ?></p>
-				<?php endif; ?>
+				<?php endif;
 
 			else :
 				?>
