@@ -36,9 +36,11 @@ get_header();
                 <ul class="recent-posts recent-events">
                 <?php
                 foreach( $recent_events as $recent ){
-                    var_dump($recent);
+                    //var_dump($recent);
+
+                    $ev_date=date_create($recent["post_date"]);
                     echo '<li class="recent-item"><a href="' . get_permalink($recent["ID"]) . '">';
-                    echo '<h4 class="recent-item-date">' . $recent["post_title"] . '</h4>';
+                    echo '<h4 class="recent-item-date">' . date_format($ev_date,"j F Y") . '</h4>';
                     echo  '<p class="recent-item-title">' . $recent["post_title"] . '</p></a></li> ';
                 }
                 wp_reset_query();
