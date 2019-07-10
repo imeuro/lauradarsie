@@ -163,6 +163,30 @@ button.menu-toggle:hover {
 
 
 
+
+
+
+#latest-events h3, 
+#latest-posts h3 {
+    text-align: center;
+    padding: 0;
+    margin: 40px auto 10px auto;
+    font-weight: 600;
+    font-size: 18px;
+}
+.recent-posts, 
+.recent-events {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+
+
+
 .site-footer {
     height: 40px;
     width: 100%;

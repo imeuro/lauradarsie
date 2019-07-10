@@ -36,7 +36,10 @@ get_header();
                 <ul class="recent-posts recent-events">
                 <?php
                 foreach( $recent_events as $recent ){
-                    echo '<li class="recent-item"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+                    var_dump($recent);
+                    echo '<li class="recent-item"><a href="' . get_permalink($recent["ID"]) . '">';
+                    echo '<h4 class="recent-item-date">' . $recent["post_title"] . '</h4>';
+                    echo  '<p class="recent-item-title">' . $recent["post_title"] . '</p></a></li> ';
                 }
                 wp_reset_query();
                 ?>
@@ -61,13 +64,13 @@ get_header();
                 <ul class="recent-posts recent-events">
                 <?php
                 foreach( $recent_posts as $recent ){
-                    echo '<li class="recent-item"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+                    echo '<li class="recent-item"><a href="' . get_permalink($recent["ID"]) . '"><p class="recent-item-title">' . $recent["post_title"].'</p></a> </li> ';
                 }
                 wp_reset_query();
                 ?>
                 </ul>
             </section>
-            
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
