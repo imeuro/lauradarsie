@@ -32,18 +32,18 @@
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" /></a></h1>
 				<?php
+				$lauradarsie_description = "<strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica";
+				if ( $lauradarsie_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $lauradarsie_description; /* WPCS: xss ok. */ ?></p>
+				<?php endif; ?>
+
 			else :
 				?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" /></a></p>
 				<?php
 			endif;
-
-			// $lauradarsie_description = html_entity_decode(get_bloginfo( 'description', 'display' ));
-			$lauradarsie_description = "<strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica";
-			if ( $lauradarsie_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $lauradarsie_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			?>
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->

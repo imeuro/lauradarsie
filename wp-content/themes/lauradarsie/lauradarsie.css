@@ -8,7 +8,7 @@ body.menu-toggled { overflow-y: hidden; }
     position: relative;
     width: 100%;
 }
-.site-branding {
+.home .site-branding {
     background: url(./images/lauradarsie-hero-img.png) no-repeat center center transparent;
     background-size: cover;
     min-height: 470px;
