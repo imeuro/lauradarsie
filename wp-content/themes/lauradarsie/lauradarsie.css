@@ -50,6 +50,7 @@ body.menu-toggled { overflow-y: hidden; }
  }
 .main-navigation {
     position: absolute;
+    z-index: 5;
     top: 0;
     right: 0;
     width: 100%;
