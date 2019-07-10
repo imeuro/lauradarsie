@@ -31,22 +31,23 @@ body.menu-toggled { overflow-y: hidden; }
 .menu-toggled .site-title a img {
     position: fixed;
     z-index: 10;
-    height: 83px;
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
+    filter: drop-shadow(1px 1px 0px #984c40);
 }
 .site-title,
 .site-title.compact { height: 120px; }
 .site-title.compact a {
     position: fixed;
+    z-index: 1;
     top: 0px;
     left: 0;
     width: 100%;
     height: 70px;
 }
 .menu-toggled .site-title.compact a { position: initial; }
-.site-title.compact a img { height: 83px; }
+.site-title.compact a img { 
+    top: 0;
+    height: 83px;
+ }
 .main-navigation {
     position: absolute;
     top: 0;
