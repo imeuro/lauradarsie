@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<small>Copyright 2019 - Laura Darsié - Tutti i diritti riservati</small>
+			<small>Copyright <?php echo date("Y"); ?> - Laura Darsié - Tutti i diritti riservati</small>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
