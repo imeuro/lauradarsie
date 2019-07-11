@@ -19,7 +19,7 @@ get_header();
 		<main id="main" class="home-main">
 
             <section id="latest-events">
-                <h3>Eventi</h3>
+                <h3>Prossimi Eventi</h3>
                 <?php
                 $args_events = array(
                     'numberposts' => 3,
@@ -48,7 +48,7 @@ get_header();
             </section>
 
             <section id="latest-posts">
-                <h3>Pubblicazioni</h3>
+                <h3>Pubblicazioni Recenti</h3>
                 <?php
                 $args_posts = array(
                     'numberposts' => 3,
