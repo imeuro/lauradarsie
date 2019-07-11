@@ -1,5 +1,5 @@
 // compact header
-var headerBlock = document.querySelector('.site-title');
+var headerBlock = document.getElementById('masthead');
 var naviBlock = document.getElementById('site-navigation');
 window.addEventListener('scroll', function(){
     var currentScrollY = this.window.scrollY;
