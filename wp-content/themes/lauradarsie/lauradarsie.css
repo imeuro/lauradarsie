@@ -1,7 +1,7 @@
 body {
     font-family: 'PT Serif', serif;
 }
-
+.post, .page { margin: 0; }
 a,
 a:visited,
 a:focus,
@@ -400,6 +400,22 @@ button.menu-toggle:hover {
     font-size: 14px;
     line-height: 26px;
     color: #222121;
+}
+
+.wp-block-quote {
+    background: url(./images/lauradarsie-blockquote-bg.png) no-repeat left center transparent;
+    background-size: contain;
+    min-height: 100px;
+    padding: 60px 40px;
+    color: #666;
+    font-size: 26px;
+    line-height: 30px;
+}
+.wp-block-quote cite {
+    font-size: 14px;
+    text-align: right;
+    font-style: italic;
+    display: block;
 }
 
 @media all and (min-width: 600px) {
