@@ -12,6 +12,7 @@ a:hover { color: #E67765; text-decoration: underline; }
 
 .hidden-mobile { display:none !important }
 @media all and (min-width: 600px) {
+    .hidden-mobile { display: inline-block; }
     .hidden-desktop { display:none !important }
 }
 
