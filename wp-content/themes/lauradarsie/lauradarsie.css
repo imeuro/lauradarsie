@@ -10,7 +10,7 @@ a:active { color: #E67765; text-decoration: none; }
 a:hover { color: #E67765; text-decoration: underline; }
 
 
-.hidden-mobile { display:none !important }
+.hidden-mobile { display:none; }
 @media all and (min-width: 600px) {
     .hidden-mobile { display: inline-block; }
     .hidden-desktop { display:none !important }
