@@ -32,7 +32,11 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" /></a></p>
 			<?php endif; ?>
 
+			<?php if ( ( is_front_page() && is_home() ) || is_page( 'contatti') || is_page('biografia') ) : ?>
 				<p class="site-description"><strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica</p>
+			<?php else : ?>
+			<p class="site-description hidden-mobile"><strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica</p>
+			<?php endif; ?>
 
 		</div><!-- .site-branding -->
 

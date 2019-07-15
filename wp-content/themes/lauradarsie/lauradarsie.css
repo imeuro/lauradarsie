@@ -10,7 +10,10 @@ a:active { color: #E67765; text-decoration: none; }
 a:hover { color: #E67765; text-decoration: underline; }
 
 
-
+.hidden-mobile { display:none !important }
+@media all and (min-width: 600px) {
+    .hidden-desktop { display:none !important }
+}
 
 body.menu-toggled { overflow-y: hidden; }
 .site-header {
@@ -337,6 +340,8 @@ button.menu-toggle:hover {
 #content {
     margin-left: 10px;
     margin-right: 10px;
+    display: inline-block;
+    min-height: calc(100vh - 181px);
 }
 
 .home-main {
@@ -353,6 +358,10 @@ button.menu-toggle:hover {
     #content {
         max-width: 1140px;
         margin: 0 auto 0 300px;
+        display: inline-block;
+        min-height: calc(100vh - 181px);
+        width: calc(100% - 300px);
+        box-sizing: border-box;
     }
 }
 @media all and (min-width: 1024px) {
@@ -410,9 +419,10 @@ button.menu-toggle:hover {
     color: #666;
     font-size: 26px;
     line-height: 30px;
+    display: inline-block;
 }
 .wp-block-quote cite {
-    font-size: 14px;
+    font-size: 18px;
     text-align: right;
     font-style: italic;
     display: block;
