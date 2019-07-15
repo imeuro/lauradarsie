@@ -358,10 +358,10 @@ button.menu-toggle:hover {
 @media all and (min-width: 600px) {
     #content {
         max-width: 1140px;
-        margin: 0 auto 0 300px;
+        margin: 0 15px 0 300px;
         display: inline-block;
         min-height: calc(100vh - 181px);
-        width: calc(100% - 300px);
+        width: calc(100% - 315px);
         box-sizing: border-box;
     }
 }
@@ -481,6 +481,7 @@ button.menu-toggle:hover {
 }
 
 #vscf .form-group button#vscf_send {
+    font-family: 'PT Sans', sans-serif;
     background: #e67765;
     border: none;
     color: #fff;
