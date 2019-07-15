@@ -435,8 +435,7 @@ button.menu-toggle:hover {
         text-align: left
     }
 }
-@media all and (min-width: 1024px) {
-}
+
 
 
 .site-footer {
@@ -450,4 +449,45 @@ button.menu-toggle:hover {
     line-height: 40px;
     text-align: center;
     color: #FFF;
+}
+
+
+
+#vscf {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#vscf .form-group {
+    flex: 1 1 100%;
+}
+
+@media all and (min-width: 1024px) {
+    #vscf .form-group {
+        flex: 1 1 50%;
+    }
+    #vscf .form-group.vscf-message-group,
+    #vscf .form-group.vscf-privacy-group {
+        flex: 1 1 100%;
+    }
+}
+#vscf .form-group input[type="text"], 
+#vscf .form-group input[type="email"], 
+#vscf .form-group textarea#vscf_message {
+    border: none;
+    border-radius: 0;
+    background: #e8e8e8;
+}
+
+#vscf .form-group button#vscf_send {
+    background: #e67765;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
+    margin: 40px auto;
+    display: inline-block;
 }
