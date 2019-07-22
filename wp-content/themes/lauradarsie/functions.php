@@ -142,6 +142,11 @@ add_action( 'wp_enqueue_scripts', 'lauradarsie_scripts' );
 // require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Custom Post Types.
+ */
+require get_template_directory() . '/inc/post-types.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';

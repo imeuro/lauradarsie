@@ -492,3 +492,48 @@ button.menu-toggle:hover {
     margin: 40px auto;
     display: inline-block;
 }
+
+
+
+/* archivio eventi */
+.post-type-archive-ldarsie_eventi .site-main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.post-type-archive-ldarsie_eventi .page-header {
+    flex: 0 0 100%;
+}
+.post-type-archive-ldarsie_eventi article.ldarsie_eventi {
+    flex: 0 0 33%;
+    margin: 0 10px 15px 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+.post-type-archive-ldarsie_eventi .entry-content > * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.archive .ldarsie_eventi .entry-footer {
+    width: 100%;
+    margin: 10px 0 40px 0;
+    border-bottom: 1px solid #f3f4f5;
+}
+.single .post-thumbnail {
+    width: 100%;
+    text-align: center;
+    background: #f8f8f8;
+    padding: 0;
+}
+
