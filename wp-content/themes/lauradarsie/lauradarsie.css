@@ -429,6 +429,8 @@ button.menu-toggle:hover {
     display: block;
 }
 
+.wp-block-quote { font-size: 18px; line-height: 24px; }
+.wp-block-quote cite { font-size: 14px; }
 .wp-block-pullquote,
 .wp-block-pullquote:not(.is-style-solid-color) {
     background: url(./images/lauradarsie-blockquote-bg.png) no-repeat left center transparent;
