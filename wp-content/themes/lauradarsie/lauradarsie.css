@@ -429,7 +429,8 @@ button.menu-toggle:hover {
     display: block;
 }
 
-.wp-block-pullquote {
+.wp-block-pullquote,
+.wp-block-pullquote:not(.is-style-solid-color) {
     background: url(./images/lauradarsie-blockquote-bg.png) no-repeat left center transparent;
     background-size: contain;
 }
