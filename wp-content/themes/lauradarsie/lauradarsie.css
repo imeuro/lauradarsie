@@ -358,11 +358,11 @@ button.menu-toggle:hover {
 
 @media all and (min-width: 600px) {
     #content {
-        max-width: 1140px;
-        margin: 0 15px 0 300px;
+        max-width: 960px;
+        margin: 0 25px 0 300px;
         display: inline-block;
         min-height: calc(100vh - 181px);
-        width: calc(100% - 315px);
+        width: calc(100% - 325px);
         box-sizing: border-box;
     }
 }
@@ -412,10 +412,8 @@ button.menu-toggle:hover {
     line-height: 26px;
     color: #222121;
 }
-
-.wp-block-quote {
-    background: url(./images/lauradarsie-blockquote-bg.png) no-repeat left center transparent;
-    background-size: contain;
+.wp-block-quote,
+.wp-block-pullquote {
     min-height: 100px;
     padding: 60px 40px;
     color: #666;
@@ -423,12 +421,19 @@ button.menu-toggle:hover {
     line-height: 30px;
     display: inline-block;
 }
-.wp-block-quote cite {
+.wp-block-quote cite,
+.wp-block-pullquote cite {
     font-size: 18px;
     text-align: right;
     font-style: italic;
     display: block;
 }
+
+.wp-block-pullquote {
+    background: url(./images/lauradarsie-blockquote-bg.png) no-repeat left center transparent;
+    background-size: contain;
+}
+
 
 @media all and (min-width: 600px) {
     #latest-events h3,
