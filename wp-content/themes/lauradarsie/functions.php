@@ -136,6 +136,17 @@ function lauradarsie_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'lauradarsie_scripts' );
 
+
+function rename_posts() {
+    global $menu;
+     
+	$menu[5][0] = 'Pubblicazioni'; // Change Posts to Pubblicazioni
+	$submenu['edit.php'][5][0] = 'Tutte le Pubblicazioni';
+    $submenu['edit.php'][10][0] = 'Aggiungi Pubblicazione';
+}
+add_action( 'admin_menu', 'rename_posts' );
+
+
 /**
  * Implement the Custom Header feature.
  */

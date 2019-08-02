@@ -429,7 +429,7 @@ button.menu-toggle:hover {
     display: block;
 }
 
-.wp-block-quote { font-size: 18px; line-height: 24px; }
+.wp-block-quote { font-size: 18px; line-height: 30px; padding: 30px 40px 50px 40px; }
 .wp-block-quote cite { font-size: 14px; }
 .wp-block-pullquote,
 .wp-block-pullquote:not(.is-style-solid-color) {
