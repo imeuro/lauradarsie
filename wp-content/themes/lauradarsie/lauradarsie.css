@@ -420,6 +420,7 @@ button.menu-toggle:hover {
     font-size: 26px;
     line-height: 30px;
     display: inline-block;
+    position: relative;
 }
 .wp-block-quote cite,
 .wp-block-pullquote cite {
@@ -435,6 +436,23 @@ button.menu-toggle:hover {
 .wp-block-pullquote:not(.is-style-solid-color) {
     background: url(./images/lauradarsie-blockquote-bg.png) no-repeat left center transparent;
     background-size: contain;
+}
+blockquote.wp-block-quote:before,
+blockquote.wp-block-quote:after {
+    content: '\201c';
+    position: absolute;
+    font-size: 96px;
+    color: rgba(230, 119, 101, 0.5);
+}
+blockquote.wp-block-quote:after {
+    content: '\201c';
+    left: 0;
+    top: 40px;
+}
+blockquote.wp-block-quote:after {
+    content: '\201d';
+    right: 0;
+    bottom: 40px;
 }
 
 

@@ -53,7 +53,7 @@ get_header();
                 $args_posts = array(
                     'numberposts' => 3,
                     'offset' => 0,
-                    'category' => 'pubblicazioni',
+                    // 'category' => 'pubblicazioni',
                     'orderby' => 'post_date',
                     'order' => 'DESC',
                     'post_type' => 'post',
