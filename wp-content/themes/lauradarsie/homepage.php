@@ -18,7 +18,7 @@ get_header();
                     'category' => 0,
                     'orderby' => 'post_date',
                     'order' => 'DESC',
-                    'post_type' => 'tribe_events',
+                    'post_type' => 'ldarsie_eventi',
                     'post_status' => 'publish',
                     'suppress_filters' => true
                 );
