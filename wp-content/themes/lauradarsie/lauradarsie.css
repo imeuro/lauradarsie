@@ -343,6 +343,7 @@ button.menu-toggle:hover {
     margin-right: 10px;
     display: inline-block;
     min-height: calc(100vh - 181px);
+    width: calc(100% - 20px);
 }
 
 .home-main {
