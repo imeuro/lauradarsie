@@ -14,25 +14,17 @@
     </figure> -->
 
     <div class="entry-txt">
-        <header class="entry-header">        
-            <?php
-            if (get_field('evento_data_inizio')) {
-                echo '<h3 class="ldarsie_eventdate">'.get_field('evento_data_inizio');
-                echo '</h3>';
-            }
-            ?>
-        </header><!-- .entry-header -->
-
 
         <div class="entry-content">
             <?php
-            if ( is_singular() ) :
-                the_title( '<h1 class="entry-title">', '</h1>' );
-            else :
-                the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-            endif;
+            $startdate = '';
+            if (get_field('evento_data_inizio')) {
+                $startdate = '<span class="ldarsie_eventdate">'.get_field('evento_data_inizio');
+                echo '</span>';
+            }
 
-                        
+            the_title( '<h2 class="entry-title">'.$startdate.' - <a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+
             the_content( sprintf(
                 wp_kses(
                     /* translators: %s: Name of current post. Only visible to screen readers */

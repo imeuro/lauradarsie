@@ -30,7 +30,10 @@ get_header();
                     //var_dump($recent);
                     $ev_date=date_create($recent["post_date"]);
                     echo '<li class="recent-item"><a href="' . get_permalink($recent["ID"]) . '">';
-                    // echo '<h4 class="recent-item-date">' . tribe_get_start_date($recent["ID"],false,'j F Y') . '</h4>';
+                    if (get_field('evento_data_inizio',$recent["ID"])){
+                        echo '<h4 class="recent-item-date">' . get_field('evento_data_inizio',$recent["ID"]) . '</h4>';
+                    }
+                    // 
                     echo  '<p class="recent-item-title">' . $recent["post_title"] . '</p></a></li> ';
                 }
                 wp_reset_query();

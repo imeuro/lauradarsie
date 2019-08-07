@@ -533,8 +533,8 @@ blockquote.wp-block-quote:after {
     flex: 0 0 100%;
 }
 .post-type-archive-ldarsie_eventi article.ldarsie_eventi {
-    flex: 0 0 33%;
-    margin: 0 10px 15px 0;
+    flex: 0 0 100%;
+    margin: 0 10px 50px 0;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -545,13 +545,36 @@ blockquote.wp-block-quote:after {
     background-repeat: no-repeat;
     border-radius: 3px;
 }
+.post-type-archive-ldarsie_eventi .entry-txt {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.post-type-archive-ldarsie_eventi .entry-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 .post-type-archive-ldarsie_eventi .entry-content > * {
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 15px;
+    margin: 0;
+    text-align: left;
 }
+.post-type-archive-ldarsie_eventi .entry-content .entry-title {
+    font-size: 16px;
+}
+
+
+
 .archive .ldarsie_eventi .entry-footer {
     width: 100%;
     margin: 10px 0 40px 0;
@@ -564,3 +587,8 @@ blockquote.wp-block-quote:after {
     padding: 0;
 }
 
+@media all and (min-width: 1024px){
+    .post-type-archive-ldarsie_eventi article.ldarsie_eventi {
+        flex: 0 0 50%;
+    }
+}
