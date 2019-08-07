@@ -543,6 +543,7 @@ blockquote.wp-block-quote:after {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 3px;
 }
 .post-type-archive-ldarsie_eventi .entry-txt {
@@ -589,6 +590,11 @@ blockquote.wp-block-quote:after {
 
 @media all and (min-width: 1024px){
     .post-type-archive-ldarsie_eventi article.ldarsie_eventi {
-        flex: 0 0 50%;
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+@media all and (min-width: 1440px){
+    .post-type-archive-ldarsie_eventi article.ldarsie_eventi {
+        flex: 0 0 calc(33% - 10px);
     }
 }
