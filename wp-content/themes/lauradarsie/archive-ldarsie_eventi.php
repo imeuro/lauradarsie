@@ -1,6 +1,9 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying ldarsie_eventi archive pages 
+ * ordered by 'evento_data_inizio' field
+ *
+ * see: themes/lauradarsie/inc/post-types.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

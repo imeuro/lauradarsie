@@ -63,4 +63,31 @@ function ldarsie_CPT() {
 
 }
 add_action( 'init', 'ldarsie_CPT', 0 );
+
+
+
+
+
+
+function ldarsie_pre_get_posts( $query ) {
+	// do not modify queries in the admin
+	if( is_admin() ) {	
+		return $query;
+	}
+	// only modify queries for 'event' post type
+	if( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'ldarsie_eventi' ) {	
+		$query->set('orderby', 'meta_value');	
+		$query->set('meta_key', 'evento_data_inizio');	 
+		$query->set('meta_type', 'DATETIME');	 
+		$query->set('order', 'DESC'); 	
+	}
+	// return
+	return $query;
+
+}
+
+add_action('pre_get_posts', 'ldarsie_pre_get_posts');
+
+
+
 ?>
