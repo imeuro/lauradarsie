@@ -12,19 +12,22 @@
 	<header class="entry-header">
         <?php
         if (get_field('evento_data_inizio')) {
-            echo '<h3 class="ldarsie_eventdate">Inizio: '.get_field('evento_data_inizio');
-            if (get_field('evento_data_inizio_ore')) {
+
+            echo '<h4 class="ldarsie_eventdate">'.get_field('evento_data_inizio');
+			
+			if (get_field('evento_data_inizio_ore')) {
                 echo ' dalle <time>'.get_field('evento_data_inizio_ore').'</time>';
-             }
-            echo '</h3>';
-        }
-        if (get_field('evento_data_fine')) {
-            echo '<h3 class="ldarsie_eventdate_end">Fine: '.get_field('evento_data_fine');
-            if (get_field('evento_data_fine_ore')) {
-                echo ' dalle <time>'.get_field('evento_data_fine_ore').'</time>';
-             }
-            echo '</h3>';
-        }
+            }
+			
+			if (get_field('evento_data_fine')) {
+				echo ' - '.get_field('evento_data_fine');
+				if (get_field('evento_data_fine_ore')) {
+					echo ' <time>'.get_field('evento_data_fine_ore').'</time>';
+				 }
+			}
+			echo '</h4>';
+
+		}
         ?>
 		<?php
 		if ( is_singular() ) :

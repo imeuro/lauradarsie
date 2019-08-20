@@ -25,23 +25,8 @@
 
             the_title( '<h2 class="entry-title">'.$startdate.' - <a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 
-            the_content( sprintf(
-                wp_kses(
-                    /* translators: %s: Name of current post. Only visible to screen readers */
-                    __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'lauradarsie' ),
-                    array(
-                        'span' => array(
-                            'class' => array(),
-                        ),
-                    )
-                ),
-                get_the_title()
-            ) );
+            echo '<p>'.wp_filter_nohtml_kses(get_the_content()).'</p>';
 
-            wp_link_pages( array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lauradarsie' ),
-                'after'  => '</div>',
-            ) );
             ?>
         </div><!-- .entry-content -->
     </div>
