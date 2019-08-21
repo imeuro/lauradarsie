@@ -54,7 +54,7 @@ body.menu-toggled { overflow-y: hidden; }
 }
 .compact .site-title a {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0px;
     left: 0;
     width: 100%;
@@ -444,7 +444,7 @@ blockquote.wp-block-quote:after {
     font-size: 96px;
     color: rgba(230, 119, 101, 0.5);
 }
-blockquote.wp-block-quote:after {
+blockquote.wp-block-quote:before {
     content: '\201c';
     left: 0;
     top: 40px;
@@ -546,10 +546,26 @@ blockquote.wp-block-quote:after {
     background-position: center;
     border-radius: 3px;
 }
+.post-type-archive-ldarsie_eventi article.ldarsie_eventi.nopic {
+    background-size: initial;
+    position: relative;
+}
+.post-type-archive-ldarsie_eventi article.ldarsie_eventi.nopic:after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    opacity: .75;
+    z-index: 1;
+    background-color: #fff;
+}
 .post-type-archive-ldarsie_eventi .entry-txt {
     height: 350px;
     width: 100%;
     position: relative;
+    z-index: 2;
     top: 0;
     left: 0;
 }
@@ -597,4 +613,21 @@ blockquote.wp-block-quote:after {
     .post-type-archive-ldarsie_eventi article.ldarsie_eventi {
         flex: 0 0 calc(33% - 10px);
     }
+}
+
+
+.ldarsie_eventdate {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #e67765;
+    color: #fff;
+    padding: 3px 10px 3px 5px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border-radius: 2px;
+}
+.archive .entry-title a {
+    width: 100%;
+    display: block;
 }

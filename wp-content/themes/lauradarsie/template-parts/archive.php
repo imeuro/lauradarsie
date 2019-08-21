@@ -1,21 +1,17 @@
 <?php
 /**
- * Template part for displaying ldarsie_events
+ * Template part for displaying posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package darsie
  */
 
-
-$pthumb = get_the_post_thumbnail_url();
-$pclass = 'wpic';
-if (!$pthumb) {
-    $pthumb = get_template_directory_uri().'/images/lauradarsie-logo.svg';
-    $pclass = 'nopic';
-}
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('archive '.$pclass); ?> style="background-image:url('<?php echo $pthumb ?>');">
+<article id="post-<?php the_ID(); ?>" <?php post_class('archive'); ?> style="background-image:url('<?php echo get_the_post_thumbnail_url() ?>');">
+    <!-- <figure class="entry-figure">
+        <?php // lauradarsie_post_thumbnail(); ?>
+    </figure> -->
 
     <div class="entry-txt">
 
@@ -23,7 +19,7 @@ if (!$pthumb) {
             <?php
             $startdate = '';
             if (get_field('evento_data_inizio')) {
-                $startdate = '<span class="ldarsie_eventdate">'.get_field('evento_data_inizio').'</span>';
+                $startdate = '<span class="ldarsie_eventdate">'.get_field('evento_data_inizio').'</span>khbug';
             }
 
             the_title( '<h2 class="entry-title">'.$startdate.'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
