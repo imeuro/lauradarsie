@@ -16,13 +16,13 @@
             echo '<h4 class="ldarsie_eventdate">'.get_field('evento_data_inizio');
 			
 			if (get_field('evento_data_inizio_ore')) {
-                echo ' dalle <time>'.get_field('evento_data_inizio_ore').'</time>';
+                echo ', ore <time>'.get_field('evento_data_inizio_ore').'</time>';
             }
 			
 			if (get_field('evento_data_fine')) {
 				echo ' - '.get_field('evento_data_fine');
 				if (get_field('evento_data_fine_ore')) {
-					echo ' <time>'.get_field('evento_data_fine_ore').'</time>';
+					echo ' , ore <time>'.get_field('evento_data_fine_ore').'</time>';
 				 }
 			}
 			echo '</h4>';
@@ -35,16 +35,7 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				lauradarsie_posted_on();
-				lauradarsie_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
+		?>
 	</header><!-- .entry-header -->
 
 	<?php lauradarsie_post_thumbnail(); ?>
