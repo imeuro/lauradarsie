@@ -18,20 +18,14 @@ if (!$pthumb) {
 <article id="post-<?php the_ID(); ?>" <?php post_class('archive '.$pclass); ?> style="background-image:url('<?php echo $pthumb ?>');">
 
     <div class="entry-txt">
-
+    <a href="<?php echo esc_url( get_permalink() ); ?>">
         <div class="entry-content">
             <?php
-            $startdate = '';
-            if (get_field('evento_data_inizio')) {
-                $startdate = '<span class="ldarsie_eventdate">'.get_field('evento_data_inizio').'</span>';
-            }
-
-            the_title( '<h2 class="entry-title">'.$startdate.'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-
+            the_title( '<h2 class="entry-title">', '</h2>' );
             echo '<p>'.wp_filter_nohtml_kses(get_the_content()).'</p>';
-
             ?>
         </div><!-- .entry-content -->
+        </a>
     </div>
 
 	<footer class="entry-footer">
