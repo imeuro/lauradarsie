@@ -11,6 +11,7 @@ function vscf_shortcode($vscf_atts) {
 		'class' => 'vscf-container',
 		'email_to' => '',
 		'from_header' => vscf_from_header(),
+		'prefix_subject' => '',
 		'subject' => '',
 		'label_name' => '',
 		'label_email' => '',
@@ -76,14 +77,24 @@ function vscf_shortcode($vscf_atts) {
 	// processing form
 	if (($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_POST['vscf_send']) && isset( $_POST['vscf_nonce'] ) && wp_verify_nonce( $_POST['vscf_nonce'], 'vscf_nonce_action' ) ) {
 		// sanitize content
+		if ($subject_setting != "yes") {
+			$subject_value = sanitize_text_field($_POST['vscf_subject']);
+		} else {
+			$subject_value = '';
+		}
+		if($privacy_setting == "yes") {
+			$privacy_value = sanitize_key($_POST['vscf_privacy']);
+		} else {
+			$privacy_value = '';
+		}
 		$post_data = array(
 			'form_name' => sanitize_text_field($_POST['vscf_name']),
 			'form_email' => sanitize_email($_POST['vscf_email']),
-			'form_subject' => sanitize_text_field($_POST['vscf_subject']),
+			'form_subject' => $subject_value,
 			'form_captcha' => sanitize_text_field($_POST['vscf_captcha']),
 			'form_captcha_hidden' => sanitize_text_field($_POST['vscf_captcha_hidden']),
 			'form_message' => sanitize_textarea_field($_POST['vscf_message']),
-			'form_privacy' => sanitize_key($_POST['vscf_privacy']),
+			'form_privacy' => $privacy_value,
 			'form_firstname' => sanitize_text_field($_POST['vscf_firstname']),
 			'form_lastname' => sanitize_text_field($_POST['vscf_lastname'])
 		);
@@ -100,9 +111,9 @@ function vscf_shortcode($vscf_atts) {
 
 	// after form validation
 	if ($sent == true) {
-		vscf_redirect_success();
+		return '<script type="text/javascript">window.location="'.vscf_redirect_success().'"</script>';
 	} elseif ($fail == true) {
-		vscf_redirect_error();
+		return '<script type="text/javascript">window.location="'.vscf_redirect_error().'"</script>';
 	}
 
 	// display form or the result of submission

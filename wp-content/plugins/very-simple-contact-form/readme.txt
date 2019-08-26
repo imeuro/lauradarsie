@@ -1,6 +1,6 @@
 === Very Simple Contact Form ===
 Contributors: Guido07111975
-Version: 10.5
+Version: 10.7
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires at least: 4.7
@@ -33,7 +33,7 @@ Via Settings > VSCF you can:
 * Change admin email address
 * Keep form submissions and settings when uninstalling plugin
 * Activate the listing of form submissions in your dashboard
-* Hide subject field
+* Disable subject field
 * Activate confirmation email to sender
 * Activate a privacy consent checkbox on form
 * Disable collection of IP address
@@ -52,6 +52,7 @@ Misc:
 * Change admin email address: `email_to="your-email-here"`
 * Send to multiple email addresses: `email_to="first-email-here, second-email-here"`
 * Change "From" email header: `from_header="your-email-here"`
+* Change prefix of email subject: `prefix_subject="your prefix here"`
 * Change email subject: `subject="your subject here"`
 * Change CSS class of form: `class="your-class-here"`
 
@@ -82,7 +83,7 @@ Form messages:
 Examples:
 
 * One attribute: `[contact email_to="your-email-here"]`
-* Multiple attributes: `[contact email_to="your-email-here" subject="your subject here" auto_reply="true"]`
+* Multiple attributes: `[contact email_to="your-email-here" subject="your subject here" class="your-class-here"]`
 
 = Widget attributes =
 The widget supports the same attributes. You don't have to add the main shortcode tag or the brackets.
@@ -90,7 +91,7 @@ The widget supports the same attributes. You don't have to add the main shortcod
 Examples:
 
 * One attribute: `email_to="your-email-here"`
-* Multiple attributes: `email_to="your-email-here" subject="your subject here" auto_reply="true"`
+* Multiple attributes: `email_to="your-email-here" subject="your subject here" class="your-class-here"`
 
 = List form submissions in dashboard =
 Via Settings > VSCF you can activate the listing of form submissions in your dashboard.
@@ -151,11 +152,11 @@ By default form submissions will be send to the email address set in Settings > 
 You can change this via Settings > VSCF or by using an attribute.
 
 = What is the default email subject? =
-By default the email subject contains the name of your website, followed by the subject that sender has filled in. If subject field is hidden it only contains the name of your website.
+By default the email subject contains a prefix (the title of your website), followed by the subject that sender has filled in. If subject field is disabled it only contains the prefix (the title of your website).
 
 You can change this by using an attribute.
 
-This subject will also be used in the confirmation email to sender.
+The same subject will also be used in the confirmation email to sender.
 
 = Why is the "from" email address not from sender? =
 I have used a default so called "From" email header to avoid form submissions being marked as spam.
@@ -220,28 +221,25 @@ Please open a topic in plugin forum.
 
 
 == Changelog ==
+= Version 10.7 =
+* Re-added attribute to change the prefix of the email subject
+* By default this prefix is the title of your website
+* Fix: redirect to success or fail message when using the WPBakery plugin
+* Fix: undefined index
+
+= Version 10.6 =
+* Added extra clearfixes in stylesheet
+* Minor changes in code
+
 = Version 10.5 =
-* added extra CSS class to each field group
-* this makes form customization much easier
+* Added extra CSS class to each field group
+* This makes form customization much easier
 
 = Version 10.4 =
-* fix: undefined index
+* Fix: undefined index
 
 = Version 10.3 =
-* updated stylesheet
-
-= Version 10.2 =
-* fix: red border color in case of field error
-* added setting to hide subject field
-* removed attributes for hiding subject field and activating confirmation email to sender
-* you should now go the settingspage to set both
-* after some discussion I have decided to remove the max character length of inputs again
-* removed attributes to change the max character length of form inputs
-
-= Version 10.1 =
-* fix: removed Content-Transfer-Encoding, because issue with Polish language (thanks matrixpoland)
-* plugin now uses the variable Content-Transfer-Encoding from the PHPMailer script
-* minor changes in code
+* Updated stylesheet
 
 For all versions please check file changelog.
 

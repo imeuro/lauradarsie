@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Very Simple Contact Form
  * Description: This is a lightweight plugin to create a customized contact form. Add shortcode [contact] on a page or use the widget to display your form.
- * Version: 10.5
+ * Version: 10.7
  * Author: Guido
  * Author URI: https://www.guido.site
  * License: GNU General Public License v3 or later
@@ -168,9 +168,7 @@ function vscf_redirect_success() {
 			$url_with_param = $current_url."/?vscfsp=success";
 		}
 	}
-	echo '<script type="text/javascript">';
-	echo 'window.location="'.$url_with_param.'"';
-	echo '</script>';
+	return $url_with_param;
 }
 
 function vscf_widget_redirect_success() {
@@ -184,9 +182,7 @@ function vscf_widget_redirect_success() {
 			$url_with_param = $current_url."/?vscfsw=success";
 		}
 	}
-	echo '<script type="text/javascript">';
-	echo 'window.location="'.$url_with_param.'"';
-	echo '</script>';
+	return $url_with_param;
 }
 
 // redirect if sending failed
@@ -201,9 +197,7 @@ function vscf_redirect_error() {
 			$url_with_param = $current_url."/?vscfsp=fail";
 		}
 	}
-	echo '<script type="text/javascript">';
-	echo 'window.location="'.$url_with_param.'"';
-	echo '</script>';
+	return $url_with_param;
 }
 
 function vscf_widget_redirect_error() {
@@ -217,9 +211,7 @@ function vscf_widget_redirect_error() {
 			$url_with_param = $current_url."/?vscfsw=fail";
 		}
 	}
-	echo '<script type="text/javascript">';
-	echo 'window.location="'.$url_with_param.'"';
-	echo '</script>';
+	return $url_with_param;
 }
 
 // form anchor
@@ -227,9 +219,7 @@ function vscf_anchor_footer() {
 	$anchor_setting = get_option('vscf-setting-21');
 	if ($anchor_setting == "yes") {
 		echo '<script type="text/javascript">';
-		echo 'if(document.getElementById("vscf-anchor")) {';
-		echo 'document.getElementById("vscf-anchor").scrollIntoView({behavior:"smooth", block:"center"});';
-		echo '}';
+		echo 'if(document.getElementById("vscf-anchor")) { document.getElementById("vscf-anchor").scrollIntoView({behavior:"smooth", block:"center"}); }';
 		echo '</script>';
 	}
 }

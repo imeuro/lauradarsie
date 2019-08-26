@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Very Simple Contact Form\n"
-"POT-Creation-Date: 2019-05-18 19:57+0200\n"
+"POT-Creation-Date: 2019-07-14 00:18+0200\n"
 "PO-Revision-Date: 2015-08-14 23:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -158,7 +158,7 @@ msgid "List form submissions in dashboard."
 msgstr ""
 
 #: vscf-options.php:118
-msgid "Hide subject field."
+msgid "Disable subject field."
 msgstr ""
 
 #: vscf-options.php:126
@@ -199,20 +199,20 @@ msgstr ""
 msgid "For info, available attributes and support %s."
 msgstr ""
 
-#: vscf-submission.php:44
+#: vscf-submission.php:40
 msgid "Yes"
 msgstr ""
 
-#: vscf-submission.php:46
+#: vscf-submission.php:42
 msgid "No"
 msgstr ""
 
-#: vscf-submission.php:52
+#: vscf-submission.php:48
 #, php-format
 msgid "IP: %s"
 msgstr ""
 
-#: vscf-submission.php:58 vscf-submission.php:66
+#: vscf-submission.php:54 vscf-submission.php:62
 #, php-format
 msgid "Privacy consent: %s"
 msgstr ""
