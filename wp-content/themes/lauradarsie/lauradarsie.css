@@ -554,6 +554,7 @@ blockquote.wp-block-quote:after {
 }
 .content-squared article.nopic {
     background-size: initial;
+    background-position: center 50px;
     position: relative;
 }
 .content-squared article.nopic:after {
