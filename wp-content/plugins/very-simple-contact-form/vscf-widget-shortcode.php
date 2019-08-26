@@ -8,12 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 function vscf_widget_shortcode($vscf_atts) {
 	// attributes
 	$vscf_atts = shortcode_atts(array(
+		'class' => 'vscf-container',
 		'email_to' => '',
 		'from_header' => vscf_from_header(),
 		'subject' => '',
-		'hide_subject' => '',
-		'auto_reply' => '',
-		'auto_reply_message' => '',
 		'label_name' => '',
 		'label_email' => '',
 		'label_subject' => '',
@@ -28,9 +26,7 @@ function vscf_widget_shortcode($vscf_atts) {
 		'error_message' => '',
 		'message_success' => '',
 		'message_error' => '',
-		'class' => 'vscf-container',
-		'maxlength_textfield' => '500',
-		'maxlength_textarea' => '5000'
+		'auto_reply_message' => ''
 	), $vscf_atts);
 
 	// initialize variables
@@ -49,27 +45,18 @@ function vscf_widget_shortcode($vscf_atts) {
 	$fail = false;
 
 	// get custom settings from settingspage
-	$list_submissions_setting = esc_attr(get_option('vscf-setting-2'));
-	$auto_reply_setting = esc_attr(get_option('vscf-setting-3'));
-	$privacy_setting = esc_attr(get_option('vscf-setting-4'));
-	$ip_address_setting = esc_attr(get_option('vscf-setting-19'));
-	$anchor_setting = esc_attr(get_option('vscf-setting-21'));
+	$list_submissions_setting = get_option('vscf-setting-2');
+	$subject_setting = get_option('vscf-setting-23');
+	$auto_reply_setting = get_option('vscf-setting-3');
+	$privacy_setting = get_option('vscf-setting-4');
+	$ip_address_setting = get_option('vscf-setting-19');
+	$anchor_setting = get_option('vscf-setting-21');
 
 	// include labels
 	include 'vscf-labels.php';
 
 	// captcha
 	$vscf_rand = vscf_widget_random_number();
-
-	// hide or display subject field
-	if ($vscf_atts['hide_subject'] == "true") {
-		$hide_subject = true;
-	}
-
-	// hide or display privacy field
-	if ($privacy_setting != "yes") {
-		$hide_privacy = true;
-	}
 
 	// set nonce field
 	$vscf_nonce_field = wp_nonce_field( 'vscf_widget_nonce_action', 'vscf_widget_nonce', true, false );

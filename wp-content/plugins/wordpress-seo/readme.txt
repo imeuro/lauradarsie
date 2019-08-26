@@ -3,10 +3,10 @@ Contributors: yoast, joostdevalk, tacoverdo, omarreiss, atimmer, jipmoors
 Donate link: https://yoa.st/1up
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
-Tags: SEO, XML sitemap, Google Search Console, Content analysis, Readability
+Tags: SEO, XML sitemap, Content analysis, Readability
 Requires at least: 4.9
-Tested up to: 5.1.1
-Stable tag: 10.1.3
+Tested up to: 5.2.2
+Stable tag: 11.6
 Requires PHP: 5.2.4
 
 Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.
@@ -42,11 +42,10 @@ Yoast SEO does everything in its power to please both visitors and search engine
 
 * Yoast SEO tunes the engine of your site so you can work on creating great content.
 * Our cornerstone content and internal linking features help you optimize your site structure in a breeze.
-* Integrates with Google Search Console: See how your site performs in the search engines and fix crawl errors.
 * Manage SEO roles: Give your colleagues access to specific sections of the Yoast SEO plugin.
 * Bulk editor: Make large-scale edits to your site.
 * **[Premium]** Social previews to manage the way your page is shared on social networks like Facebook and Twitter.
-* **[Premium]** Redirect manager: It keeps your site healthy by easily redirecting errors from Google Search Console, deleted pages and changed URLs.
+* **[Premium]** Redirect manager: It keeps your site healthy by easily redirecting deleted pages and changed URLs.
 
 ### Premium support
 
@@ -106,83 +105,39 @@ You'll find answers to many of your questions on [kb.yoast.com](https://yoa.st/1
 
 == Changelog ==
 
-= 10.1.3 =
-Release Date: April 4th, 2019
+= 11.6.0 =
+Release Date: July 9th, 2019
 
-Bugfixes:
-
-* Reverted a fix relating replacement variables on the block editor, which was causing a slow and unworkable editting experience.
-* Fixes a bug where the license information from MyYoast is being saved aggressively, causing updates in MyYoast to take 24 hours to show up in the site.
-* Fixes a bug where the `rel="publisher"` Google+ tag was being output on the frontend if that profile was provided in the past.
-* Fixes a bug where the server could experience a high load when using external object cache.
-* Fixes the bug where Yoast SEO would contact Yoast.com for license checks on specific Yoast-pages even when no Yoast addons are installed.
-
-= 10.1.2 =
-Release Date: April 3rd, 2019
-
-Bugfixes:
-
-* Fixes the bug where Yoast SEO would contact Yoast.com for license checks even when no Yoast addons are installed.
-
-= 10.1.1 =
-Release Date: April 2nd, 2019
-
-Bugfixes:
-
-* Fixes a bug where a fatal error can occur on license requests which return an unexpected result.
-
-= 10.1.0 =
-Release Date: April 2nd, 2019
+Yoast SEO 11.6 is out today. Of course, we did the regular round of bug fixing, but the focus of this release is two-fold: a new, much easier to use tabbed interface for the meta box and an updated HowTo structured data content block for WordPress. Find out all about Yoast SEO 11.6 in [our 11.6 release post](https://yoa.st/release-11-6)!
 
 Enhancements:
 
-* Removes Google+ from the various interfaces: social accounts, user profiles and more.
-* Adds a Wikipedia URL field to the social accounts list, to be used in `sameAs` Schema.org output.
-* Adds a LinkedIn profile URL field to user profiles, a first sign of things to come in 10.2.
-* Removes the `og:image:alt` tag as it causes potential accessibility issues when content is shared via Facebook.
-* Adds support for browsers auto-fill in the form fields that collect user information.
-* Adds missing screen reader text to the SEO score icon in the front end admin bar.
-* Increases the recommended sentence length limit for Spanish and Catalan to be more in line with best practices in these languages, props to [Sílvia Fustegueres](https://www.ampersand.net/en/).
-* Improves the list of Catalan transition words, props to [Sílvia Fustegueres](https://www.ampersand.net/en/).
-* Improves the list of Swedish transition words.
+* Changes the tabs in the metabox to horizontal tabs.
+* Splits the content optimization tab in the metabox into two separate tabs: an SEO and a Readability tab.
+* Updates HowTo schema output to reflect Google's new guidelines.
+* Makes sure the media modal that is triggered for image uploads only displays images.
 
 Bugfixes:
 
-* Fixes a bug where selecting a parent page for a page would lead to console errors and a not-working 'parent page' snippet variable.
-* Fixes a bug where no focus indication was shown for the title separators in the configuration wizard and settings.
-* Fixes a bug where taxonomy terms weren't shown correctly in the Snippet Preview, for example when using the `Categories`, `Tags` or any custom taxonomy replacement variable.
-* Fixes a bug where breadcrumb structured data wasn't output when breadcrumbs are disabled and a theme with breadcrumb support has been installed.
-* Fixes a bug where a PHP notice would be written to `debug.log` when adding a new site to a WordPress 5.1 multisite installation.
+* Fixes a bug where the Schema `@id` for `Person` would be incorrect on posts when author archives where disabled. 
+* Fixes a bug where the Schema would contain `WebPage` instead of `CollectionPage` for a latest posts homepage and the static posts page type.
+* Fixes a bug where the Organization and Article Schema nodes would incorrectly be output when a website had not set their organization's name and/or logo.
+* Fixes a bug where the eye marker tooltips would break out of the metabox, which would hide the last part of the tooltip text.
+* Fixes a bug where instances of unfiltered HTML would be allowed in term descriptions where they shouldn't be.
 
-Other:
+= 11.5.0 =
+Release Date: June 25th, 2019
 
-* Removes all functionality that has been deprecated before Yoast SEO 6.1.
-
-= 10.0.1 =
-Release Date: March 19th, 2019
-
-Bugfixes:
-
-* Fixes a bug where network-wide settings were not saved on multisite environments.
-
-= 10.0.0 =
-Release Date: March 12th, 2019
+Yoast SEO 11.5 is out today. This release features a big change that gives you a better idea of how searchers see your snippets on mobile. Yep, we’ve overhauled the mobile snippet preview and brought it up-to-date with Google’s latest changes. And that, of course, includes that shiny favicon. Find out what Yoast SEO 11.5 is all about in [our 11.5 release post](https://yoa.st/release-11-5)!
 
 Enhancements:
 
-* The recalibrated analysis is out of its beta phase and is now the default for the SEO analysis. Thanks for testing and giving us your valuable feedback! You are awesome! 👍
-* Adds `$taxonomy` to the arguments passed to the `wpseo_terms` filter. Props to [polevaultweb](https://github.com/polevaultweb).
-* Changes the screen reader text of the SEO score indicator in the menu bar and the traffic light in the snippet preview from `Bad SEO score.` to `Needs improvement.`
-* Props to [Kingdutch](https://github.com/Kingdutch) for helping improve our open source content analysis library.
+* Updates the Mobile Snippet Preview.
+* Moves the primary image for a page out of the `WebPage` piece into its own graph piece.
 
 Bugfixes:
 
-* Fixes a bug where the `focus keyphrase` snippet variable was not correctly applied on term pages.
-* Fixes a bug where the Facebook image that was set for the WooCommerce Shop page would not be outputted as `og:image`. Props [stodorovic](https://github.com/stodorovic).
-* Fixes a bug where the featured image set on a WooCommerce Shop page would not be outputted as Facebook OpenGraph Image or Twitter Image. Props [stodorovic](https://github.com/stodorovic).
-* Fixes a bug where backslashes and consecutive double quotes would be removed from the focus keyphrase when saving a post or term.
-* Fixes a bug where backslashes would be removed from the breadcrumb title, focus keyphrase, title or meta description when saving a term.
+* Fixes missing trailing slash for the homepage on post sitemap. Props to [stodorovic](https://github.com/stodorovic).
 
 = Earlier versions =
-
-For the changelog of earlier versions, please refer to https://yoa.st/yoast-seo-changelog
+For the changelog of earlier versions, please refer to [the changelog on yoast.com](https://yoa.st/yoast-seo-changelog).

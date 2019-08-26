@@ -5,23 +5,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 	// get custom labels from settingspage
-	$name_label = esc_attr(get_option('vscf-setting-5'));
-	$email_label = esc_attr(get_option('vscf-setting-6'));
-	$subject_label = esc_attr(get_option('vscf-setting-7'));
-	$captcha_label = esc_attr(get_option('vscf-setting-8'));
-	$message_label = esc_attr(get_option('vscf-setting-9'));
-	$privacy_label = esc_attr(get_option('vscf-setting-18'));
-	$submit_label = esc_attr(get_option('vscf-setting-10'));
-	$error_name_label = esc_attr(get_option('vscf-setting-11'));
-	$error_email_label = esc_attr(get_option('vscf-setting-13'));
-	$error_subject_label = esc_attr(get_option('vscf-setting-20'));
-	$error_captcha_label = esc_attr(get_option('vscf-setting-14'));
-	$error_message_label = esc_attr(get_option('vscf-setting-12'));
+	$name_label = get_option('vscf-setting-5');
+	$email_label = get_option('vscf-setting-6');
+	$subject_label = get_option('vscf-setting-7');
+	$captcha_label = get_option('vscf-setting-8');
+	$message_label = get_option('vscf-setting-9');
+	$privacy_label = get_option('vscf-setting-18');
+	$submit_label = get_option('vscf-setting-10');
+	$error_name_label = get_option('vscf-setting-11');
+	$error_email_label = get_option('vscf-setting-13');
+	$error_subject_label = get_option('vscf-setting-20');
+	$error_captcha_label = get_option('vscf-setting-14');
+	$error_message_label = get_option('vscf-setting-12');
 
 	// get custom messages from settingspage
-	$server_error_message = esc_attr(get_option('vscf-setting-15'));
-	$thank_you_message = esc_attr(get_option('vscf-setting-16'));
-	$auto_reply_message = esc_attr(get_option('vscf-setting-17'));
+	$server_error_message = get_option('vscf-setting-15');
+	$thank_you_message = get_option('vscf-setting-16');
+	$auto_reply_message = get_option('vscf-setting-17');
 
 	// name label
 	$value = $name_label;

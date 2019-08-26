@@ -40,7 +40,7 @@
 
 		</div><!-- .site-branding -->
 
-		<?php if ( is_front_page() && is_home() ) : ?>
+		<?php if ( is_page('home') ) : ?>
 			<section id="bio-preview" class="bio-expandible">
 				<a href="<?php echo get_permalink(2); ?>">
 					<div class="bio-short"><p><?php echo get_the_excerpt( 2 ); ?></p></div>

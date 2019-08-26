@@ -1,6 +1,33 @@
 CHANGELOG
 =========
 
+= Version 10.5 =
+* added extra CSS class to each field group
+* this makes form customization much easier
+
+= Version 10.4 =
+* fix: undefined index
+
+= Version 10.3 =
+* updated stylesheet
+
+= Version 10.2 =
+* fix: red border color in case of field error
+* added setting to hide subject field
+* removed attributes for hiding subject field and activating confirmation email to sender
+* you should now go the settingspage to set both
+* after some discussion I have decided to remove the max character length of inputs again
+* removed attributes to change the max character length of form inputs
+
+= Version 10.1 =
+* fix: removed Content-Transfer-Encoding, because issue with Polish language (thanks matrixpoland)
+* plugin now uses the variable Content-Transfer-Encoding from the PHPMailer script
+* minor changes in code
+
+= Version 10.0 =
+* minor changes in code
+* added, removed and changed escaping and sanitizing of many items
+
 = Version 9.9 =
 * added attributes to change the max character length of form inputs
 * use "maxlength_textfield" to change the default 500 characters of text field
@@ -12,14 +39,14 @@ CHANGELOG
 * this can be useful if you want to apply different styling when having multiple forms
 * if you have used class "vscf" in your custom CSS, you should change this into class "vscf-container"
 * have changed this class because ID was the same (to avoid confusion)
-* increased max character length for inputs
+* increased max character length of inputs
 * fix: removed maxlength attribute from hidden input (thanks malae)
 
 = Version 9.7 =
 * have updated the captcha again
 * the random number now changes on submit
 * more secure than the previous day based random number
-* increased max length for inputs from 50 to 75 characters
+* increased max length of inputs from 50 to 75 characters
 * removed unnecessary escaping
 
 = Version 9.6 =
@@ -64,7 +91,7 @@ CHANGELOG
 * removed unnecessary whitespaces from most files
 
 = Version 9.1 =
-* file vscf-style: removed reset CSS from the #vscf wrapper
+* file vscf-style: removed reset CSS from the #vscf container
 * did this to avoid a conflict with Twenty Nineteen theme
 * added new icon for form submissions in dashboard
 * some textual changes
@@ -96,7 +123,7 @@ CHANGELOG
 
 = Version 8.7 =
 * request: added (shortcode) attributes for all field labels and form messages again
-* using an attribute will always overwrite it's corresponding settingspage field
+* using an attribute will always override its corresponding settingspage field
 * added file vscf-labels (relocated labels from shortcode files to this new file)
 * added stripslashes() and htmlspecialchars_decode() filter for form and form submission
 * now unexpected backslashes are removed when using single or double quote
@@ -108,13 +135,13 @@ CHANGELOG
 * updated theme author info
 
 = Version 8.5 =
-* fix: added CSS to make privacy checkbox visible when using Bootstrap (thanks Marie)
+* fix: added CSS to make privacy consent checkbox visible when using Bootstrap (thanks Marie)
 * fix: nonce was outputted twice (thanks malae and Felipe)
-* fix: duplicate ID of privacy checkbox (thanks malae)
+* fix: duplicate ID of privacy consent checkbox (thanks malae)
 * credits in changelog: removed all full names (because of the GDPR)
 
 = Version 8.4 =
-* added bootstrap css class to privacy checkbox
+* added bootstrap CSS class to privacy consent checkbox
 * minor change in file vscf-style
 
 = Version 8.3 =
@@ -143,7 +170,7 @@ CHANGELOG
 * updated privacy consent notification in email to admin and in dashboard 
 
 = Version 7.7 =
-* new: activate a privacy checkbox on form (because of the GDPR)
+* new: activate a privacy consent checkbox on form (because of the GDPR)
 * if activated, user must consent to the collection of name, email and IP address
 * you can set this via the settingspage
 * added a privacy consent notification in email to admin and in dashboard
@@ -234,7 +261,7 @@ CHANGELOG
 * message field and widget information field: save html is allowed
 * added filter wp_kses_post
 * updated files vscf-form, vscf-widget-form and vscf-widget
-* fixed mistake in textdomain
+* fixed mistake in text domain
 
 = Version 5.9 =
 * all php files: disable direct access to file
