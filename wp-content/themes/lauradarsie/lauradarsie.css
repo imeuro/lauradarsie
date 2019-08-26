@@ -552,6 +552,9 @@ blockquote.wp-block-quote:after {
     background-position: center;
     border-radius: 3px;
 }
+.content-squared article > a {
+    width: 100%;
+}
 .content-squared article.nopic {
     background-size: initial;
     background-position: center 50px;
@@ -592,9 +595,11 @@ blockquote.wp-block-quote:after {
     padding: 5px 15px;
     margin: 0;
     text-align: left;
+    color: #222;
 }
 .content-squared .entry-content .entry-title {
     font-size: 16px;
+    color: #e67765;
 }
 
 
@@ -635,7 +640,8 @@ blockquote.wp-block-quote:after {
     display: inline-block;
     border-radius: 2px;
 }
-.archive .entry-title a {
+.archive .entry-title a,
+.archive .entry-title span.tit-txt {
     width: 100%;
     display: block;
 }
