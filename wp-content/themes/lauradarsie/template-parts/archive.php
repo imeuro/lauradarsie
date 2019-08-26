@@ -29,7 +29,7 @@ if (!$pthumb) {
     </div>
 
 	<footer class="entry-footer">
-		<?php lauradarsie_entry_footer(); ?>
+		<?php // lauradarsie_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
 </a>
