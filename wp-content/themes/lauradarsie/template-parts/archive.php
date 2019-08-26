@@ -15,10 +15,11 @@ if (!$pthumb) {
     $pclass = 'nopic';
 }
 ?>
+<a href="<?php echo esc_url( get_permalink() ); ?>">
 <article id="post-<?php the_ID(); ?>" <?php post_class('archive '.$pclass); ?> style="background-image:url('<?php echo $pthumb ?>');">
 
     <div class="entry-txt">
-    <a href="<?php echo esc_url( get_permalink() ); ?>">
+    
         <div class="entry-content">
             <?php
             the_title( '<h2 class="entry-title">', '</h2>' );
@@ -32,3 +33,4 @@ if (!$pthumb) {
 		<?php lauradarsie_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+</a>
