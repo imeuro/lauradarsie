@@ -26,7 +26,6 @@ if (!$pthumb) {
             echo '<p>'.wp_filter_nohtml_kses(get_the_content()).'</p>';
             ?>
         </div><!-- .entry-content -->
-        </a>
     </div>
 
 	<footer class="entry-footer">
