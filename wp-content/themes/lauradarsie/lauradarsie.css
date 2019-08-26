@@ -294,7 +294,7 @@ button.menu-toggle:hover {
     }
     .site-description {
         position: fixed;
-        z-index: 1;
+        z-index: 11;
         top: 30px;
         right: 15px;
         font-size: 16px;
