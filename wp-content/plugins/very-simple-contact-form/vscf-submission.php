@@ -25,12 +25,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 			// from email header
 			$from = $vscf_atts['from_header'];
 			// subject
+			if (!empty($vscf_atts['prefix_subject'])) {
+				$prefix = $vscf_atts['prefix_subject'];
+			} else {
+				$prefix = $blog_name;
+			}
 			if (!empty($vscf_atts['subject'])) {
 				$subject = $vscf_atts['subject'];
 			} elseif ($subject_setting != "yes") {
-				$subject = "(".$blog_name.") " . $form_data['form_subject'];
+				$subject = "(".$prefix.") " . $form_data['form_subject'];
 			} else {
-				$subject = $blog_name;
+				$subject = $prefix;
 			}
 			// auto reply message
 			$reply_message = htmlspecialchars_decode($auto_reply_message, ENT_QUOTES);

@@ -115,7 +115,7 @@ function vscf_field_callback_23() {
 	$value = esc_attr( get_option( 'vscf-setting-23' ) );
 	?>
 	<input type='hidden' name='vscf-setting-23' value='no'>
-	<label><input type='checkbox' name='vscf-setting-23' <?php checked( $value, 'yes' ); ?> value='yes'> <?php esc_attr_e( 'Hide subject field.', 'very-simple-contact-form' ); ?></label>
+	<label><input type='checkbox' name='vscf-setting-23' <?php checked( $value, 'yes' ); ?> value='yes'> <?php esc_attr_e( 'Disable subject field.', 'very-simple-contact-form' ); ?></label>
 	<?php
 }
 

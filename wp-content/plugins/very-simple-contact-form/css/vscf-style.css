@@ -1,8 +1,10 @@
-/* Very Simple Contact Form stylesheet */
 /* For reference only - plugin loads the minified CSS file */
+
+/* Very Simple Contact Form stylesheet */
 
 /* Form */
 #vscf {clear:both;}
+#vscf:after {content:''; display:block; height:0; clear:both;}
 .vscf-container {}
 
 /* Form anchor */
@@ -33,6 +35,7 @@
 
 /* Widget */
 .vscf-widget {clear:both;}
+.vscf-widget:after {content:''; display:block; height:0; clear:both;}
 
 /* Widget text above form */
 .vscf-widget-text {clear:both;}
