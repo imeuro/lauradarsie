@@ -16,6 +16,11 @@ a:hover { color: #E67765; text-decoration: underline; }
     .hidden-desktop { display:none !important }
 }
 
+.entry-content p {
+    font-size: 1.15rem;
+    line-height: 1.85rem;
+}
+
 body.menu-toggled { overflow-y: hidden; }
 .site-header {
     position: relative;
@@ -214,7 +219,8 @@ button.menu-toggle:hover {
     display: block;
     width: 150px;
     height: 150px;
-    background: url(./images/lauradarsie-profile-pic.png) no-repeat center center transparent;
+    background: url(./images/lauradarsie-profile-pic.png) no-repeat center 0px transparent;
+    background-size: 200px;
     border: 4px solid #E67765;
     border-radius: 50%;
     margin: 30px auto 15px auto;
@@ -289,16 +295,16 @@ button.menu-toggle:hover {
         width: 100px;
         height: 100px;
         border: 2px solid #E67765;
-        background-size: 100px;
+        background-size: 150px;
         transition: all 300ms ease-in-out;
     }
     .site-description {
         position: fixed;
         z-index: 11;
-        top: 30px;
+        top: 20px;
         right: 15px;
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 20px;
+        line-height: 23px;
         text-align: right;
         padding-right: 120px;
         display: flex;
@@ -310,23 +316,27 @@ button.menu-toggle:hover {
     .compact .site-description:before {
         width: 65px;
         height: 65px;
-        background-size: 65px;
+        background-size: 95px;
     }
     .compact .site-description {
         top: 10px;
-	z-index: 11;
+	    z-index: 11;
         height: 65px;
         padding-right: 80px;
+        font-size: 14px;
+        line-height: 16px;
     }
     .site-description strong {
         display: contents;
     }
     .bio-expandible {
         position: absolute;
-        top: 120px;
+        top: 90px;
+        padding: 15px;
         right: 0;
-        width: 250px;
+        width: 360px;
         border: none;
+        background: rgba(255,255,255,0.63);
     }
     .bio-short p {
         padding: 0;
@@ -596,6 +606,8 @@ blockquote.wp-block-quote:after {
     margin: 0;
     text-align: left;
     color: #222;
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
 .content-squared .entry-content .entry-title {
     font-size: 16px;
