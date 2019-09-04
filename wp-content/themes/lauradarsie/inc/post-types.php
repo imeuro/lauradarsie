@@ -1,4 +1,5 @@
 <?php
+
 // Register Custom Post Type(s)
 function ldarsie_CPT() {
 
@@ -91,8 +92,6 @@ add_action('pre_get_posts', 'ldarsie_pre_get_posts');
 
 
 
-
-
 // Register Custom Taxonomy
 function ldarsie_CT() {
 
@@ -124,11 +123,16 @@ function ldarsie_CT() {
 		'public'                     => true,
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
-		'show_in_nav_menus'          => false,
-		'show_tagcloud'              => false,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		'show_in_rest' => true,
 	);
 	register_taxonomy( 'ldarsie_tipo_evento', array( 'ldarsie_eventi' ), $args );
 
 }
 add_action( 'init', 'ldarsie_CT', 0 );
+
+
+
+
 ?>
