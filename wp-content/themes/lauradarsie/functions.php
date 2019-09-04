@@ -140,9 +140,9 @@ add_action( 'wp_enqueue_scripts', 'lauradarsie_scripts' );
 function rename_posts() {
     global $menu;
      
-	$menu[5][0] = 'Pubblicazioni'; // Change Posts to Pubblicazioni
-	$submenu['edit.php'][5][0] = 'Tutte le Pubblicazioni';
-    $submenu['edit.php'][10][0] = 'Aggiungi Pubblicazione';
+	$menu[5][0] = 'Articoli'; // Change Posts to Pubblicazioni
+	$submenu['edit.php'][5][0] = 'Tutte gli Articoli';
+    $submenu['edit.php'][10][0] = 'Aggiungi Articolo';
 }
 add_action( 'admin_menu', 'rename_posts' );
 
