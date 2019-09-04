@@ -36,7 +36,7 @@ function ldarsie_CPT() {
 		'description'           => __( 'Calendario eventi', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-		'taxonomies'            => array( ),
+		'taxonomies'            => array( 'category' ),
 		// 'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -51,7 +51,7 @@ function ldarsie_CPT() {
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-        'capability_type'       => 'page',
+        'capability_type'       => 'post',
         'rewrite'               => array(
             'slug'                  => 'eventi',
             'with_front'            => true,
