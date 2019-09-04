@@ -8,15 +8,9 @@ get_header();
 		<main id="main" class="site-main">
             
             <header class="page-header">
-                <h1 class="page-title"><?php the_title();?>tt</h1>
+                <h1 class="page-title"><?php the_title();?></h1>
             </header><!-- .page-header -->
 
-
-        <?php
-        $today = date('m/d/Y h:i:s a', time());
-        echo 'aaaaaaa';
-        print_r($today);
-        ?>
         <?php
         // WP_Query arguments
         $args = array(
