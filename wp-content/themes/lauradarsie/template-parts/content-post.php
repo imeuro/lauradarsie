@@ -10,6 +10,25 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('single'); ?>>
 	<header class="entry-header">
+        <?php
+        if (get_field('evento_data_inizio')) {
+
+            echo '<h4 class="ldarsie_eventdate">'.get_field('evento_data_inizio');
+			
+			if (get_field('evento_data_inizio_ore')) {
+                echo ', ore <time>'.get_field('evento_data_inizio_ore').'</time>';
+            }
+			
+			if (get_field('evento_data_fine')) {
+				echo ' - '.get_field('evento_data_fine');
+				if (get_field('evento_data_fine_ore')) {
+					echo ' , ore <time>'.get_field('evento_data_fine_ore').'</time>';
+				 }
+			}
+			echo '</h4>';
+
+		}
+        ?>
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -36,10 +55,14 @@
 			get_the_title()
 		) );
 
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lauradarsie' ),
+			'after'  => '</div>',
+		) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php // lauradarsie_entry_footer(); ?>
+		<?php lauradarsie_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -67,6 +67,20 @@ add_action( 'init', 'ldarsie_CPT', 0 );
 
 
 
+function rename_posts() {
+    global $menu;
+     
+	$menu[5][0] = 'Psicoanalisi della musica'; // Change Posts to Psicoanalisi della musica
+	$submenu['edit.php'][5][0] = 'Tutte gli Articoli';
+    $submenu['edit.php'][10][0] = 'Aggiungi Articolo';
+}
+add_action( 'admin_menu', 'rename_posts' );
+
+
+
+
+
+
 
 
 
@@ -76,7 +90,7 @@ function ldarsie_pre_get_posts( $query ) {
 		return $query;
 	}
 	// only modify queries for 'event' post type
-	if( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'ldarsie_eventi' ) {	
+	if( ( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'ldarsie_eventi' ) || $query->is_main_query() ) {	
 		$query->set('orderby', 'meta_value');	
 		$query->set('meta_key', 'evento_data_inizio');	 
 		$query->set('meta_type', 'DATETIME');	 
