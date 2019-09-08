@@ -606,11 +606,12 @@ blockquote.wp-block-quote:after {
     margin: 0;
     text-align: left;
     color: #222;
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 14px;
+    line-height: 22px;
 }
 .content-squared .entry-content .entry-title {
     font-size: 16px;
+    line-height: 22px;
     color: #e67765;
 }
 
