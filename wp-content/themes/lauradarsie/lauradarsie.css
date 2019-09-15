@@ -422,6 +422,7 @@ button.menu-toggle:hover {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    margin: 40px 0;
 }
 .home-main section {
     flex: 0 0 100%;
