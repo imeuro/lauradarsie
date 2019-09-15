@@ -15,7 +15,7 @@ get_header();
                 <div id="intro-video">
                     <a href="<?php echo get_permalink(13); ?>">
                         <figure class="wp-block-video">
-                            <video controls src="<?php echo wp_get_attachment_url( 13 ); ?>"></video>
+                            <video controls src="./wp-content/uploads/2019/09/MAH03125_1.mp4"></video>
                         </figure>
                     </a>
                 </div>
