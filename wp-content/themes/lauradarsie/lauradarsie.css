@@ -60,15 +60,16 @@ body.menu-toggled { overflow-y: hidden; }
     position: absolute;
     bottom: 0;
     right: -250px;
-    animation-name: fadeinout1;
+    animation-name: homeFade;
     animation-duration: 20s;
     animation-delay: 0;
     animation-iteration-count: infinite;
     opacity: 0;
 }
 .site-heroes picture#site-hero-lacan img { 
-    animation-name: fadeinout1;
-    animation-delay: 10s
+    animation-name: homeFade;
+    animation-delay: 10s;
+    right:110px;
 }
 @media all and (min-width: 600px) {
     .site-heroes picture img {
@@ -81,7 +82,7 @@ body.menu-toggled { overflow-y: hidden; }
     }
 }
 
-@keyframes fadeinout1 {
+@keyframes homeFade {
     0% {opacity: 0;}
     25% {opacity: 0.85;}
     50% {opacity: 0.85;}

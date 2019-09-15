@@ -36,7 +36,7 @@
 						<img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-hero-lacan.png" alt="Jacques Lacan" />
 					</figure>
 				</div>
-				<section id="bio-preview" class="bio-expandible">
+				<section id="bio-preview" class="bio-expandible hidden-mobile">
 					<a href="<?php echo get_permalink(2); ?>">
 						<div class="bio-short"><p><?php echo get_the_excerpt( 2 ); ?></p></div>
 						<small class="bio-expander">Continua a leggere</small>
