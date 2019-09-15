@@ -65,6 +65,9 @@ get_header();
                 get_template_part( 'template-parts/archive', 'ldarsie_eventi' );
             }
         } else {
+            if (is_page('agenda')) :
+                echo 'Spiacenti, al momento non sono presenti eventi in agenda.';
+            endif;
             // no posts found
         }
 

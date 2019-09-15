@@ -10,6 +10,7 @@ a:active { color: #E67765; text-decoration: none; }
 a:hover { color: #E67765; text-decoration: underline; }
 
 
+.hidden,
 .hidden-mobile { display:none; }
 @media all and (min-width: 600px) {
     .hidden-mobile { display: inline-block; }
@@ -27,11 +28,67 @@ body.menu-toggled { overflow-y: hidden; }
     width: 100%;
 }
 .home .site-branding {
-    background: url(./images/lauradarsie-hero-img.png) no-repeat center center transparent;
+    background: url(./images/lauradarsie-hero-base.png) no-repeat center center transparent;
     background-size: cover;
     min-height: 400px;
     height: 50vh;
+    position: relative;
+    margin-top: -10px;
+    overflow: hidden;
+    z-index: 1;
 }
+
+.site-heroes {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.site-heroes picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    float: left;
+    padding: 0;
+}
+.site-heroes picture img {
+    min-width: 450px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: -250px;
+    animation-name: fadeinout1;
+    animation-duration: 20s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+.site-heroes picture#site-hero-lacan img { 
+    animation-name: fadeinout1;
+    animation-delay: 10s
+}
+@media all and (min-width: 600px) {
+    .site-heroes picture img {
+        width: 700px;
+        right: 40px;
+        bottom: -30px;
+    }
+    .site-heroes picture#site-hero-lacan img { 
+        right: 175px;
+    }
+}
+
+@keyframes fadeinout1 {
+    0% {opacity: 0;}
+    25% {opacity: 0.85;}
+    50% {opacity: 0.85;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
 .site-title a {
     padding: 0 10px;
     display: inline-block;
@@ -40,6 +97,7 @@ body.menu-toggled { overflow-y: hidden; }
     position: relative;
     height: 110px;
     transition: height 300ms ease-in-out;
+    z-index: 3;
 }
 .site-title a img {
     float: left;
@@ -235,6 +293,8 @@ button.menu-toggle:hover {
     color: #000000;
     width: auto;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 

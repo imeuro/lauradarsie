@@ -26,8 +26,22 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php if ( is_front_page() && is_home() ) : ?>
+			<?php if ( is_page('home') ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" /></a></h1>
+				<div class="site-heroes">
+					<picture id="site-hero-freud">
+						<img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-hero-freud.png" alt="Sigmund Freud" />
+					</picture>
+					<picture id="site-hero-lacan">
+						<img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-hero-lacan.png" alt="Jacques Lacan" />
+					</figure>
+				</div>
+				<section id="bio-preview" class="bio-expandible">
+					<a href="<?php echo get_permalink(2); ?>">
+						<div class="bio-short"><p><?php echo get_the_excerpt( 2 ); ?></p></div>
+						<small class="bio-expander">Continua a leggere</small>
+					</a>
+				</section>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" /></a></p>
 			<?php endif; ?>
@@ -41,12 +55,6 @@
 		</div><!-- .site-branding -->
 
 		<?php if ( is_page('home') ) : ?>
-			<section id="bio-preview" class="bio-expandible">
-				<a href="<?php echo get_permalink(2); ?>">
-					<div class="bio-short"><p><?php echo get_the_excerpt( 2 ); ?></p></div>
-					<small class="bio-expander">Continua a leggere</small>
-				</a>
-			</section>
 		<?php endif; ?>
 
 	</header><!-- #masthead -->
