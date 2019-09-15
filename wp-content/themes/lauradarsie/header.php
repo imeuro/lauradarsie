@@ -55,6 +55,12 @@
 		</div><!-- .site-branding -->
 
 		<?php if ( is_page('home') ) : ?>
+		<section id="bio-preview" class="bio-expandible hidden-desktop">
+					<a href="<?php echo get_permalink(2); ?>">
+						<div class="bio-short"><p><?php echo get_the_excerpt( 2 ); ?></p></div>
+						<small class="bio-expander">Continua a leggere</small>
+					</a>
+		</section>
 		<?php endif; ?>
 
 	</header><!-- #masthead -->
