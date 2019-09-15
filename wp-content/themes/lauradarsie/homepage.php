@@ -13,11 +13,9 @@ get_header();
                 
                 <h2>Introduzione alla Neuromusicologia</h2>
                 <div id="intro-video">
-                    <a href="<?php echo get_permalink(13); ?>">
-                        <figure class="wp-block-video">
-                            <video controls src="./wp-content/uploads/2019/09/MAH03125_1.mp4"></video>
-                        </figure>
-                    </a>
+                    <figure class="wp-block-video">
+                        <video controls src="./wp-content/uploads/2019/09/MAH03125_1.mp4"></video>
+                    </figure>
                 </div>
                 <div id="intro-text">
                     <a href="<?php echo get_permalink(13); ?>">
