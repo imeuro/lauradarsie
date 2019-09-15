@@ -9,8 +9,26 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="home-main">
 
+            <section id="site-intro" class="fullcol">
+                
+                <h2>Introduzione alla Neuromusicologia</h2>
+                <div id="intro-video">
+                    <a href="<?php echo get_permalink(13); ?>">
+                        <figure class="wp-block-video">
+                            <video controls src="<?php get_attached_media( 'video', 13 ) ?>"></video>
+                        </figure>
+                    </a>
+                </div>
+                <div id="intro-text">
+                    <a href="<?php echo get_permalink(13); ?>">
+                        <p><?php echo get_the_excerpt( 13 ); ?></p>
+                        <small class="bio-expander">Continua a leggere</small>
+                    </a>
+                </div>
+            </section>
+
             <section id="latest-events">
-                <h3>Prossimi Eventi</h3>
+                <h2>Agenda / Eventi recenti</h2>
                 <?php
                 $args_events = array(
                     'numberposts' => 3,
@@ -42,7 +60,7 @@ get_header();
             </section>
 
             <section id="latest-posts">
-                <h3>Pubblicazioni Recenti</h3>
+                <h2>Psicoanalisi della musica</h2>
                 <?php
                 $args_posts = array(
                     'numberposts' => 3,

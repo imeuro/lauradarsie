@@ -421,11 +421,17 @@ button.menu-toggle:hover {
 .home-main {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .home-main section {
     flex: 0 0 100%;
-    padding: 0;
+    padding: 30px 0;
+}
+.home-main #site-intro > h2 {
+    flex: 0 0 95%;
+}
+#intro-text p {
+    color: #404040;
 }
 
 @media all and (min-width: 600px) {
@@ -443,6 +449,18 @@ button.menu-toggle:hover {
         flex-flow: row wrap;
     }
     .home-main section {
+        flex: 0 0 45%;
+    }
+    .home-main section.fullcol {
+        flex: 0 0 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #e6776580;
+    }
+    #intro-video,
+    #intro-text {
         flex: 0 0 45%;
     }
 }
@@ -467,7 +485,8 @@ button.menu-toggle:hover {
     margin: 0;
     list-style: none;
 }
-.recent-item a {
+.recent-item a,
+#intro-text a {
     text-decoration: none;
 }
 .recent-item-date {
