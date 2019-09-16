@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying "Psicoanalisi della Musica"
+ * The template for displaying "Psicanalisi della Musica"
  *
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -16,7 +16,7 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">Psicoanalisi della Musica</h1>
+				<h1 class="page-title">Psicanalisi della Musica</h1>
 				<?php
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
