@@ -26,7 +26,7 @@ get_header();
             </section>
 
             <section id="latest-events">
-                <h2>Agenda / Eventi recenti</h2>
+                <h2>Archivio Eventi</h2>
                 <?php
                 $args_events = array(
                     'numberposts' => 3,
@@ -34,13 +34,13 @@ get_header();
                     'category' => 0,
                     'orderby' => 'post_date',
                     'order' => 'DESC',
-                    'post_type' => 'ldarsie_eventi',
+                    'post_type' => array('post','ldarsie_eventi'),
                     'post_status' => 'publish',
                     'suppress_filters' => true
                 );
                 $recent_events = wp_get_recent_posts( $args_events, ARRAY_A );
                 ?>
-                <ul class="recent-posts recent-events">
+                <ul class="recent-events">
                 <?php
                 foreach( $recent_events as $recent ){
                     //var_dump($recent);
@@ -57,29 +57,13 @@ get_header();
                 </ul>
             </section>
 
-            <section id="latest-posts">
-                <h2>Psicoanalisi della musica</h2>
+            <section id="links-list">
+                <h2>Siti di riferimento</h2>
                 <?php
-                $args_posts = array(
-                    'numberposts' => 3,
-                    'offset' => 0,
-                    // 'category' => 'pubblicazioni',
-                    'orderby' => 'post_date',
-                    'order' => 'DESC',
-                    'post_type' => 'post',
-                    'post_status' => 'publish',
-                    'suppress_filters' => true
-                );
-                $recent_posts = wp_get_recent_posts( $args_posts, ARRAY_A );
-                ?>
-                <ul class="recent-posts recent-events">
-                <?php
-                foreach( $recent_posts as $recent ){
-                    echo '<li class="recent-item"><a href="' . get_permalink($recent["ID"]) . '"><p class="recent-item-title">' . $recent["post_title"].'</p></a> </li> ';
-                }
+                $linksList = get_post( 162 );
+                echo $linksList->post_content;
                 wp_reset_query();
                 ?>
-                </ul>
             </section>
 
 		</main><!-- #main -->

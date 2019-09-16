@@ -480,7 +480,7 @@ button.menu-toggle:hover {
     font-weight: 600;
     font-size: 18px;
 }
-.recent-posts, 
+#links-list ul, 
 .recent-events {
     padding: 0;
     margin: 0;
