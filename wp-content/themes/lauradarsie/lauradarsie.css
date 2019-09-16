@@ -561,6 +561,26 @@ blockquote.wp-block-quote:after {
 }
 
 
+/* ppagina ubblicazioni */
+article#post-98 .entry-content ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 1.15rem;
+}
+article#post-98 .entry-content ul li:first-child {
+    flex: 1 1 auto;
+}
+article#post-98 .entry-content ul li:last-child {
+    flex: 0 0 calc(100% - 150px);
+}
+article#post-98 .entry-content ul li:first-child img {
+    border: 1px solid #e2e4e7;
+    border-radius: 2px;
+}
 
 .site-footer {
     height: 40px;
