@@ -60,7 +60,8 @@ get_header();
             <section id="links-list">
                 <h2>Siti di riferimento</h2>
                 <?php
-                $linksList = get_post( 162 );
+                $linkspage = get_page_by_path( 'links' );
+                $linksList = get_post( $linkspage );
                 echo $linksList->post_content;
                 wp_reset_query();
                 ?>
