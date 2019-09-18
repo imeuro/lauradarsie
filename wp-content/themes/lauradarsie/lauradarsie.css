@@ -458,7 +458,7 @@ button.menu-toggle:hover {
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 2px solid #e6776580;
+        border-bottom: 1px solid #e8e8e8;
     }
     #intro-video,
     #intro-text {
@@ -561,7 +561,7 @@ blockquote.wp-block-quote:after {
 }
 
 
-/* ppagina ubblicazioni */
+/* pagina pubblicazioni */
 article#post-98 .entry-content ul {
     display: flex;
     flex-flow: row wrap;
@@ -581,6 +581,43 @@ article#post-98 .entry-content ul li:last-child {
 article#post-98 .entry-content ul li:first-child img {
     border: 1px solid #e2e4e7;
     border-radius: 2px;
+}
+
+
+/* paginazione custom */
+.ldarsie-pagination {
+    width: 100%;
+    max-width: 50vw;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #e8e8e8;
+}
+.ldarsie-pagination ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 0;
+    max-width: 50vw;
+    list-style: none;
+}
+li.ldarsie-pagination-current,
+li.ldarsie-pagination-page a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: #e67765;
+    color: #fff;
+    padding: 5px 8px;
+    margin: 0 15px;
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+}
+li.ldarsie-pagination-page a {
+    background-color: #fff;
+    color: #E67765;
 }
 
 .site-footer {

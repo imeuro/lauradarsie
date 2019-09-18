@@ -12,8 +12,15 @@ get_header();
             </header><!-- .page-header -->
 
         <?php
+        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
         // WP_Query arguments
+
+        $today = date('Ymd');
+
         $args = array(
+            'posts_per_page'    => 9,
+            'paged'             => $paged,
             'post_type'         => array( 'ldarsie_eventi' ),
             'post_status'       => array( 'publish' ),
             'orderby'           => 'evento_data_inizio',
@@ -21,20 +28,24 @@ get_header();
         );
         
         $args_agenda = array(
+            'posts_per_page'    => 9,
+            'paged'             => $paged,
             'post_type'         => array( 'ldarsie_eventi' ),
             'post_status'       => array( 'publish' ),
             'orderby'           => 'evento_data_inizio',
-            'order'             => 'DESC',
+            'order'             => 'ASC',
             'meta_query'        => array(
                                     array(
                                     'key'     => 'evento_data_inizio',
-                                    'value'   => strtotime( 'today' ),
-                                    'compare' => '<'
+                                    'value'   => $today,
+                                    'compare' => '>='
                                     )
                                 )
         );
 
         $args_archivio = array(
+            'posts_per_page'    => 9,
+            'paged'             => $paged,
             'post_type'         => array( 'ldarsie_eventi' ),
             'post_status'       => array( 'publish' ),
             'orderby'           => 'evento_data_inizio',
@@ -42,8 +53,8 @@ get_header();
             'meta_query'        => array(
                                     array(
                                     'key'     => 'evento_data_inizio',
-                                    'value'   => strtotime( 'today' ),
-                                    'compare' => '>'
+                                    'value'   => $today,
+                                    'compare' => '<'
                                     )
                                 )
         );
@@ -61,8 +72,10 @@ get_header();
         if ( $eventi->have_posts() ) {
             while ( $eventi->have_posts() ) {
                 $eventi->the_post();
-                // do something
                 get_template_part( 'template-parts/archive', 'ldarsie_eventi' );
+            }
+            if (function_exists("ldarsie_pagination")) {
+                ldarsie_pagination($eventi->max_num_pages);
             }
         } else {
             if (is_page('agenda')) :
