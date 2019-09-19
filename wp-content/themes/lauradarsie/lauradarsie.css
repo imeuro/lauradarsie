@@ -422,7 +422,7 @@ button.menu-toggle:hover {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    margin: 40px 0;
+    margin: 0 0 40px 0;
 }
 .home-main section {
     flex: 0 0 100%;
@@ -485,6 +485,10 @@ button.menu-toggle:hover {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    min-height: 200px;
 }
 .recent-item a,
 #intro-text a {

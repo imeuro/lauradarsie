@@ -34,7 +34,7 @@ get_header();
                     'category' => 0,
                     'orderby' => 'post_date',
                     'order' => 'DESC',
-                    'post_type' => array('post','ldarsie_eventi'),
+                    'post_type' => array('ldarsie_eventi'),
                     'post_status' => 'publish',
                     'suppress_filters' => true
                 );
