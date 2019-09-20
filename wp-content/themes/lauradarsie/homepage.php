@@ -12,6 +12,24 @@ get_header();
             <section id="site-career" class="fullcol">
                 
                 <h2>Studio di Psicanalisi</h2>
+                <div id="intro-image">
+                    <?php 
+                    $post_images = get_posts(
+                        array(
+                            'post_type'      => 'attachment',
+                            'post_mime_type' => 'image',
+                            'post_parent'    => 242,
+                            'posts_per_page' => 1, /* Save memory, only need one */
+                        )
+                    );
+                    print_r($post_images);
+
+                    echo $post_images[0]->ID;
+                    ?>
+                    <figure class="wp-block-video">
+                        <img src="<?php echo wp_get_attachment_image_src( $post_images[0]->ID, 'post-thumbnail' ); ?>" alt="Studio di Psicanalisi - Milano" />
+                    </figure>
+                </div>
                 <div id="intro-text">
                     <a href="<?php echo get_permalink( 242 ); ?>">
                         <p><?php echo get_the_excerpt( 242 ); ?></p>

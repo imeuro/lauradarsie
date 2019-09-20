@@ -132,6 +132,7 @@ body.menu-toggled { overflow-y: hidden; }
  @media all and (min-width: 600px) {
     .home .site-branding {
         height: 75vh;
+        min-height: 520px;
     }
     .home .compact .site-title a {
         background-position: left 8px;
