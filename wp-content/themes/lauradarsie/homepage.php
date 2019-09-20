@@ -10,8 +10,13 @@ get_header();
 		<main id="main" class="home-main">
 
             <section id="site-career" class="fullcol">
-                
-                <h2>Studio di Psicanalisi</h2>
+                <h2 class="block-title">Studio di Psicanalisi</h2>
+                <div id="intro-text">
+                    <a href="<?php echo get_permalink( 242 ); ?>">
+                        <p><?php echo get_the_excerpt( 242 ); ?></p>
+                        <small class="bio-expander">Continua a leggere</small>
+                    </a>
+                </div>
                 <div id="intro-image">
                     <?php 
                     $post_images = get_posts(
@@ -22,25 +27,15 @@ get_header();
                             'posts_per_page' => 1, /* Save memory, only need one */
                         )
                     );
-                    print_r($post_images);
-
-                    echo $post_images[0]->ID;
                     ?>
                     <figure class="wp-block-video">
-                        <img src="<?php echo wp_get_attachment_image_src( $post_images[0]->ID, 'post-thumbnail' ); ?>" alt="Studio di Psicanalisi - Milano" />
+                        <?php echo wp_get_attachment_image( $post_images[0]->ID, 'medium' ); ?>
                     </figure>
-                </div>
-                <div id="intro-text">
-                    <a href="<?php echo get_permalink( 242 ); ?>">
-                        <p><?php echo get_the_excerpt( 242 ); ?></p>
-                        <small class="bio-expander">Continua a leggere</small>
-                    </a>
                 </div>
             </section>
 
             <section id="site-intro" class="fullcol">
-                
-                <h2>Introduzione alla Neuromusicologia</h2>
+                <h2 class="block-title">Introduzione alla Neuromusicologia</h2>
                 <div id="intro-video">
                     <figure class="wp-block-video">
                         <video controls src="./wp-content/uploads/2019/09/MAH03125_1.mp4"></video>
