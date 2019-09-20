@@ -12,8 +12,8 @@ get_header();
             <section id="site-career" class="fullcol">
                 <h2 class="block-title">Studio di Psicanalisi</h2>
                 <div id="intro-text">
+                    <p><?php echo get_the_excerpt( 242 ); ?></p>
                     <a href="<?php echo get_permalink( 242 ); ?>">
-                        <p><?php echo get_the_excerpt( 242 ); ?></p>
                         <small class="bio-expander">Continua a leggere</small>
                     </a>
                 </div>
@@ -28,9 +28,11 @@ get_header();
                         )
                     );
                     ?>
-                    <figure class="wp-block-video">
-                        <?php echo wp_get_attachment_image( $post_images[0]->ID, 'medium' ); ?>
-                    </figure>
+                    <a href="<?php echo get_permalink( 242 ); ?>">
+                        <figure class="wp-block-video">
+                            <?php echo wp_get_attachment_image( $post_images[0]->ID, 'medium' ); ?>
+                        </figure>
+                    </a>
                 </div>
             </section>
 

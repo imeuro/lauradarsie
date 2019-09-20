@@ -106,11 +106,7 @@ body.menu-toggled { overflow-y: hidden; }
     height: 120px;
     transition: height 300ms ease-in-out;
 }
-.menu-toggled .site-title a img {
-    position: fixed;
-    z-index: 10;
-    filter: drop-shadow(1px 1px 0px #984c40);
-}
+
 .site-title,
 .compact .site-title { 
     height: 120px; 
@@ -216,8 +212,13 @@ button.menu-toggle:hover {
     height: 100vh;
 }
 .main-navigation ul {
-    margin-top: 160px;
+    margin-top: 120px;
     display: block;
+}
+@media all and (min-width: 350px) {
+    .main-navigation ul {
+        margin-top: 160px;
+    }    
 }
 .main-navigation li {
     width: 100%;
@@ -227,7 +228,7 @@ button.menu-toggle:hover {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 42px;
+    line-height: 36px;
     color: #fff;
     padding: 5px 25px;
     text-align: left;

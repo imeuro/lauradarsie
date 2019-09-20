@@ -78,8 +78,11 @@ add_action( 'admin_menu', 'rename_posts' );
 
 
 
-
-
+https://wordpress.stackexchange.com/questions/325327/allow-excerpt-for-pages-in-gutenberg
+add_action( 'init', 'ldarsie_add_excerpts_to_pages' );
+function ldarsie_add_excerpts_to_pages() {
+    add_post_type_support( 'page', 'excerpt' );
+}
 
 
 
