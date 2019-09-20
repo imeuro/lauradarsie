@@ -9,6 +9,17 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="home-main">
 
+            <section id="site-career" class="fullcol">
+                
+                <h2>Studio di Psicanalisi</h2>
+                <div id="intro-text">
+                    <a href="<?php echo get_permalink( 242 ); ?>">
+                        <p><?php echo get_the_excerpt( 242 ); ?></p>
+                        <small class="bio-expander">Continua a leggere</small>
+                    </a>
+                </div>
+            </section>
+
             <section id="site-intro" class="fullcol">
                 
                 <h2>Introduzione alla Neuromusicologia</h2>

@@ -278,7 +278,7 @@ button.menu-toggle:hover {
     display: block;
     width: 150px;
     height: 150px;
-    background: url(./images/lauradarsie-profile-pic.png) no-repeat center 0px transparent;
+    background: url(./images/lauradarsie-profile-pic.png) no-repeat center -4px transparent;
     background-size: 200px;
     border: 4px solid #E67765;
     border-radius: 50%;
@@ -288,8 +288,8 @@ button.menu-toggle:hover {
     font-family: PT Serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
     text-align: center;
     color: #000000;
     width: auto;
@@ -364,8 +364,8 @@ button.menu-toggle:hover {
         z-index: 11;
         top: 20px;
         right: 15px;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 18px;
         text-align: right;
         padding-right: 120px;
         display: flex;
@@ -389,6 +389,8 @@ button.menu-toggle:hover {
     }
     .site-description strong {
         display: contents;
+        font-size: 20px;
+        line-height: 26px;
     }
     .bio-expandible {
         position: absolute;

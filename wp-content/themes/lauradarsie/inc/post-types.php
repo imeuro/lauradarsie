@@ -91,10 +91,11 @@ function ldarsie_pre_get_posts( $query ) {
 	}
 	// only modify queries for 'event' post type
 	if( ( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'ldarsie_eventi' ) || ($query->is_main_query() && is_page('psicanalisi-della-musica') ) ) {	
+		$currentdate = date('Y-m-d H:i:s');
 		$query->set('orderby', 'meta_value');	
 		$query->set('meta_key', 'evento_data_inizio');	 
-		$query->set('meta_type', 'DATETIME');	 
 		$query->set('order', 'DESC'); 	
+		$query->set('type', 'DATETIME');
 	}
 	// return
 	return $query;
