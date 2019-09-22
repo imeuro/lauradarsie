@@ -11,3 +11,7 @@ window.addEventListener('scroll', function(){
         naviBlock.classList.remove('compact');
     }
 });
+
+// Website Credits
+console.log("%c October 2019 - Laura Darsié - lauradarsie.it ",'background:#5285a7;color:#acc4cc');
+console.log("%c Powered by: Mauro Fioravanzi ",'background:#5285a7;color:#acc4cc');
