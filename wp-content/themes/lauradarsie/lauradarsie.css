@@ -529,6 +529,8 @@ button.menu-toggle:hover {
 @media all and (min-width: 1440px) {
     #content {
         max-width: 1280px;
+        margin-right: 150px;
+        width: calc(100% - 325px - 150px);
     }
 }
 
