@@ -11,7 +11,7 @@ get_header();
 
             <section id="site-career" class="fullcol">
                 <h2 class="block-title">Studio di Psicanalisi</h2>
-                <div id="intro-text">
+                <div class="intro-text">
                     <p><?php echo get_the_excerpt( 242 ); ?></p>
                     <a href="<?php echo get_permalink( 242 ); ?>">
                         <small class="bio-expander">Continua a leggere</small>
@@ -43,7 +43,7 @@ get_header();
                         <video controls src="./wp-content/uploads/2019/09/MAH03125_1.mp4"></video>
                     </figure>
                 </div>
-                <div id="intro-text">
+                <div class="intro-text">
                     <a href="<?php echo get_permalink(13); ?>">
                         <p><?php echo get_the_excerpt( 13 ); ?></p>
                         <small class="bio-expander">Continua a leggere</small>

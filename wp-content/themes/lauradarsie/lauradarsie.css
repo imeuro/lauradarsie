@@ -474,7 +474,7 @@ button.menu-toggle:hover {
         -ms-flex: 0 0 95%;
             flex: 0 0 95%;
 }
-#intro-text p {
+.intro-text p {
     color: #404040;
 }
 
@@ -522,7 +522,7 @@ button.menu-toggle:hover {
     }
     #intro-video, 
     #intro-image,
-    #intro-text {
+    .intro-text {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 45%;
                 flex: 0 0 45%;
@@ -563,7 +563,7 @@ button.menu-toggle:hover {
     min-height: 200px;
 }
 .recent-item a,
-#intro-text a {
+.intro-text a {
     text-decoration: none;
 }
 .recent-item-date {

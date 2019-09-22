@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name="Description" content="Dr.ssa Laura Darsié - Psicanalista - Neuromusicologia clinica - Psicanalisi della musica. Membro del Movimento per la ricerca in psicanalisi “Nodi freudiani” di Milano da quindici anni, svolge attività di psicanalista, di neuromusicologa clinica e di consulente filosofico.">
 
 	<?php wp_head(); ?>
 </head>
@@ -27,7 +28,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php if ( is_page('home') ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" /></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" alt="Laura Darsie" /></a></h1>
 				<div class="site-heroes">
 					<picture id="site-hero-freud">
 						<img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-hero-freud.png" alt="Sigmund Freud" />
@@ -36,7 +37,7 @@
 						<img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-hero-lacan.png" alt="Jacques Lacan" />
 					</figure>
 				</div>
-				<section id="bio-preview" class="bio-expandible hidden-mobile">
+				<section class="bio-preview bio-expandible hidden-mobile">
 					<a href="<?php echo get_permalink(2); ?>">
 						<div class="bio-short"><p><?php echo get_the_excerpt( 2 ); ?></p></div>
 						<small class="bio-expander">Continua a leggere</small>
@@ -55,7 +56,7 @@
 		</div><!-- .site-branding -->
 
 		<?php if ( is_page('home') ) : ?>
-		<section id="bio-preview" class="bio-expandible hidden-desktop">
+		<section class="bio-preview bio-expandible hidden-desktop">
 					<a href="<?php echo get_permalink(2); ?>">
 						<div class="bio-short"><p><?php echo get_the_excerpt( 2 ); ?></p></div>
 						<small class="bio-expander">Continua a leggere</small>
