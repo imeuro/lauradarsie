@@ -9,6 +9,8 @@ a:active { color: #E67765; text-decoration: none; }
 
 a:hover { color: #E67765; text-decoration: underline; }
 
+.aligncenter { text-align: center; }
+
 
 .hidden,
 .hidden-mobile { display:none; }
