@@ -74,9 +74,9 @@ get_header();
                 $eventi->the_post();
                 get_template_part( 'template-parts/archive', 'ldarsie_eventi' );
             }
-            if (function_exists("ldarsie_pagination")) {
+            if (function_exists("ldarsie_pagination")) :
                 ldarsie_pagination($eventi->max_num_pages);
-            }
+            endif;
         } else {
             if (is_page('agenda')) :
                 echo 'Spiacenti, al momento non sono presenti eventi in agenda.';

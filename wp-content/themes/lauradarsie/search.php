@@ -38,7 +38,10 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
+			if (function_exists("ldarsie_pagination")) :
+                ldarsie_pagination($eventi->max_num_pages);
+            endif;
+
 
 		else :
 
