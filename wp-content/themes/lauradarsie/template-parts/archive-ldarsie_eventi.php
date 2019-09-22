@@ -11,7 +11,7 @@
 $pthumb = get_the_post_thumbnail_url();
 $pclass = 'wpic';
 if (!$pthumb) {
-    $pthumb = get_template_directory_uri().'/images/lauradarsie-logo.svg';
+    $pthumb = get_template_directory_uri().'/images/lauradarsie-empty512.png';
     $pclass = 'nopic';
 }
 ?>
