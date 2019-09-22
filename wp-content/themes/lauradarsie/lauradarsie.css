@@ -838,8 +838,9 @@ li.ldarsie-pagination-page a {
 }
 .content-squared article.nopic {
     background-size: initial;
-    background-position: center 50px;
+    background-position: center 20px;
     position: relative;
+    background-size: 200px;
 }
 .content-squared article.nopic:after {
     content: '';
