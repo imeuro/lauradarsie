@@ -13,12 +13,16 @@ get_header();
 	<div id="primary" class="content-area content-squared">
 		<main id="main" class="site-main">
 
+		$curPage = get_post( 74 );
+		$title = $curPage->post_title;
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">Psicanalisi della Musica</h1>
+				<h1 class="page-title"><?php $title; ?></h1>
 				<?php
-				the_archive_description( '<div class="archive-description">', '</div>' );
+				echo 'ffffff'.get_field('testo_intro',$curPage->ID)
+				// the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
@@ -26,10 +30,6 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-				echo 'gggg'.$post->ID;
-				if(get_field('testo_intro',74)) {
-					the_field('testo_intro');
-				}
 
 				/*
 				 * Include the Post-Type-specific template for the content.
