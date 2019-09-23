@@ -26,7 +26,7 @@ get_header();
 			<?php
 				global $paged;
 				if(get_field('testo_intro',$curPage->ID) && (empty($paged) || $paged === 1)):
-					echo '<div class="entry-content">';
+					echo '<div class="simil-entry-content">';
 					echo get_field('testo_intro',$curPage->ID);
 					echo '</div>';
 				endif;

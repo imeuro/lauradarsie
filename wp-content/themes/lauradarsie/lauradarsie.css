@@ -19,7 +19,8 @@ a:hover { color: #E67765; text-decoration: underline; }
     .hidden-desktop { display:none !important }
 }
 
-.entry-content p {
+.entry-content p,
+.simil-entry-content p {
     font-size: 1.15rem;
     line-height: 1.85rem;
 }
