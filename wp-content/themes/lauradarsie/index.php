@@ -21,14 +21,16 @@ get_header();
 
 			<header class="page-header">
 				<h1 class="page-title">Introduzione alla Neuromusicologia</h1>
-				<?php
+			</header><!-- .page-header -->
 
+			<?php
 				global $paged;
 				if(get_field('testo_intro',$curPage->ID) && (empty($paged) || $paged === 1)):
+					echo '<div class="entry-content">';
 					echo get_field('testo_intro',$curPage->ID);
+					echo '</div>';
 				endif;
-				?>
-			</header><!-- .page-header -->
+			?>
 
 			<?php
 			/* Start the Loop */
