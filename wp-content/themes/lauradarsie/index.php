@@ -27,6 +27,10 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 
+				if(get_field('testo_intro')) {
+					the_field('testo_intro');
+				}
+
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
