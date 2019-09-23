@@ -12,7 +12,7 @@ get_header();
 ?>
 	<div id="primary" class="content-area content-squared">
 		<main id="main" class="site-main">
-		
+
 		<?php
 		$curPage = get_post( 74 );
 		$title = $curPage->post_title;
@@ -20,10 +20,13 @@ get_header();
 		 if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php $title; ?></h1>
+				<h1 class="page-title">Introduzione alla Neuromusicologia</h1>
 				<?php
-				echo 'ffffff'.get_field('testo_intro',$curPage->ID)
-				// the_archive_description( '<div class="archive-description">', '</div>' );
+
+				global $paged;
+				if(get_field('testo_intro',$curPage->ID) && (empty($paged) || $paged === 1)):
+					echo get_field('testo_intro',$curPage->ID);
+				endif;
 				?>
 			</header><!-- .page-header -->
 
