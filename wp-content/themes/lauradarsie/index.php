@@ -26,8 +26,8 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-
-				if(get_field('testo_intro')) {
+				echo 'gggg'.$post->ID;
+				if(get_field('testo_intro',74)) {
 					the_field('testo_intro');
 				}
 
