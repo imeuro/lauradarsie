@@ -12,11 +12,12 @@ get_header();
 ?>
 	<div id="primary" class="content-area content-squared">
 		<main id="main" class="site-main">
-
+		
+		<?php
 		$curPage = get_post( 74 );
 		$title = $curPage->post_title;
 
-		<?php if ( have_posts() ) : ?>
+		 if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<h1 class="page-title"><?php $title; ?></h1>
