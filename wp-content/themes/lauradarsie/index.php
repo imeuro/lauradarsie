@@ -20,7 +20,7 @@ get_header();
 		 if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">Introduzione alla Neuromusicologia</h1>
+				<h1 class="page-title">Psicanalisi della musica</h1>
 			</header><!-- .page-header -->
 
 			<?php
