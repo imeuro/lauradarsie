@@ -52,14 +52,21 @@ get_header();
             </section>
 
             <section id="latest-events">
-                <h2>Archivio Eventi</h2>
+                <h2>Agenda</h2>
                 <?php
                 $args_events = array(
                     'numberposts' => 3,
                     'offset' => 0,
                     'category' => 0,
-                    'orderby' => 'post_date',
-                    'order' => 'DESC',
+                    'orderby'           => 'evento_data_inizio',
+                    'order'             => 'DESC',
+                    'meta_query'        => array(
+                        array(
+                        'key'     => 'evento_data_inizio',
+                        'value'   => $today,
+                        'compare' => '>='
+                        )
+                    ),
                     'post_type' => array('ldarsie_eventi'),
                     'post_status' => 'publish',
                     'suppress_filters' => true
