@@ -60,7 +60,7 @@ get_header();
                     'offset' => 0,
                     'category' => 0,
                     'orderby'           => 'evento_data_inizio',
-                    'order'             => 'DESC',
+                    'order'             => 'ASC',
                     'meta_query'        => array(
                         array(
                         'key'     => 'evento_data_inizio',
