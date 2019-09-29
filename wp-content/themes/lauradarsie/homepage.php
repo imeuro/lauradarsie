@@ -54,6 +54,7 @@ get_header();
             <section id="latest-events">
                 <h2>Agenda</h2>
                 <?php
+                $today = date('Ymd');
                 $args_events = array(
                     'numberposts' => 3,
                     'offset' => 0,
