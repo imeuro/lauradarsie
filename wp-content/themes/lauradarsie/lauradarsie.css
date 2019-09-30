@@ -623,7 +623,7 @@ blockquote.wp-block-quote:before {
 blockquote.wp-block-quote:after {
     content: '\201d';
     right: 0;
-    bottom: 40px;
+    bottom: 0;
 }
 
 
