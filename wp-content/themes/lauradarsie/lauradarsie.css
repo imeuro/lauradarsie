@@ -148,8 +148,7 @@ body.menu-toggled { overflow-y: hidden; }
  }
  @media all and (min-width: 600px) {
     .home .site-branding {
-        height: 75vh;
-        min-height: 520px;
+        height: 560px;
     }
     .home .compact .site-title a {
         background-position: left 8px;
@@ -239,7 +238,7 @@ button.menu-toggle:hover {
     margin-top: 120px;
     display: block;
 }
-@media all and (min-width: 350px) {
+@media all and (min-width: 400px) {
     .main-navigation ul {
         margin-top: 160px;
     }    
