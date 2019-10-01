@@ -40,7 +40,7 @@ get_header();
                 <h2 class="block-title">Introduzione alla Neuromusicologia</h2>
                 <div id="intro-video">
                     <figure class="wp-block-video">
-                        <video controls src="./wp-content/uploads/2019/09/MAH03125_1.mp4"></video>
+                        <video controls src="./wp-content/uploads/2019/10/laura_darsie_720p.mp4"></video>
                     </figure>
                 </div>
                 <div class="intro-text">

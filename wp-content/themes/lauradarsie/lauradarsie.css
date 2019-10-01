@@ -582,6 +582,12 @@ button.menu-toggle:hover {
     line-height: 26px;
     color: #222121;
 }
+
+.wp-block-video {
+    outline:none;
+    margin-left: -10px;
+    margin-right: -10px;
+}
 .wp-block-quote,
 .wp-block-pullquote {
     min-height: 100px;
