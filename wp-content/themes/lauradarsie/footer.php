@@ -15,10 +15,10 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<small>Copyright <?php echo date("Y"); ?> - Laura Darsié - Tutti i diritti riservati - <a href="/privacy-policy/">Privacy e Cookie Policy</a></small>
+			<small>Copyright <?php echo date("Y"); ?> - Laura Darsié - Tutti i diritti riservati - <a href="/privacy-policy/" style="color:#fff;">Privacy e Cookie Policy</a></small>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-	
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
