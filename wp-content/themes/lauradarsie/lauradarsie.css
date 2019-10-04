@@ -28,6 +28,8 @@ input[type="button"] {
 }
 
 .obf { unicode-bidi: bidi-override; direction: rtl; } /* scrivi il testo al contrario, poi lo rigira */
+#contactform { margin-top: 120px; }
+
 
 .entry-content p,
 .simil-entry-content p {
