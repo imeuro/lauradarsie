@@ -731,6 +731,17 @@ li.ldarsie-pagination-page a {
     text-align: center;
     color: #FFF;
 }
+.privacylink {
+    color:#fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+    line-height: 15px;
+}
+.privacylink:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+
+}
 
 
 
@@ -752,6 +763,35 @@ li.ldarsie-pagination-page a {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+}
+
+#vscf .form-group input#vscf_privacy.custom-control-input {
+-webkit-appearance: none;
+    background: #e8e7e8;
+    border: 2px solid #adb8c0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    margin-right: 15px;
+    outline: none;
+}
+#vscf .form-group input#vscf_privacy.custom-control-input:checked {
+    background: #e8e7e8;
+    border: 2px solid #adb8c0;
+    color: #99a1a7;
+}
+#vscf .form-group input#vscf_privacy.custom-control-input:checked:after {
+    content: '\2714';
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 26px;
+    position: absolute;
+    top: -5px;
+    left: 3px;
+    color: #e67665;
 }
 
 @media all and (min-width: 1024px) {
