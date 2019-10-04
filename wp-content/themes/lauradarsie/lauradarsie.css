@@ -27,6 +27,8 @@ input[type="button"] {
     -moz-appearance: none;
 }
 
+.obf { unicode-bidi: bidi-override; direction: rtl; } /* scrivi il testo al contrario, poi lo rigira */
+
 .entry-content p,
 .simil-entry-content p {
     font-size: 1.15rem;
