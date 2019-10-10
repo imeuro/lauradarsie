@@ -743,13 +743,13 @@ li.ldarsie-pagination-page a {
     text-align: center;
     color: #FFF;
 }
-.privacylink {
+a.privacylink {
     color:#fff;
     text-decoration: none;
     border-bottom: 1px dotted #fff;
     line-height: 15px;
 }
-.privacylink:hover {
+a.privacylink:hover {
     text-decoration: none;
     border-bottom: 1px solid #fff;
 
