@@ -62,7 +62,7 @@
 					</a>
 				</section>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" /></a></p>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" alt="Laura Darsie" /></a></p>
 			<?php endif; ?>
 
 			<?php if ( ( is_page('home') ) || is_page( 'contatti') || is_page('biografia') ) : ?>
