@@ -45,7 +45,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php if ( is_page('home') ) : ?>
+			<?php if ( is_front_page() || is_page('Home Page') ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" alt="Laura Darsie" /></a></h1>
 				<div class="site-heroes">
 					<picture id="site-hero-freud">
@@ -65,7 +65,7 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" alt="Laura Darsie" /></a></p>
 			<?php endif; ?>
 
-			<?php if ( ( is_page('home') ) || is_page( 'contatti') || is_page('biografia') ) : ?>
+			<?php if ( ( is_front_page() || is_page('Home Page') ) || is_page( 'contatti') || is_page('biografia') ) : ?>
 				<p class="site-description"><strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica</p>
 			<?php else : ?>
 			<p class="site-description hidden-mobile"><strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica</p>
@@ -73,7 +73,7 @@
 
 		</div><!-- .site-branding -->
 
-		<?php if ( is_page('home') ) : ?>
+		<?php if ( is_front_page() || is_page('Home Page') ) : ?>
 		<section class="bio-preview bio-expandible hidden-desktop">
 					<a href="<?php echo get_permalink(2); ?>">
 						<div class="bio-short"><p><?php echo get_the_excerpt( 2 ); ?></p></div>
