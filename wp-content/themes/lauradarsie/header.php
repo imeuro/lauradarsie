@@ -16,8 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<meta name="Description" content="Dr.ssa Laura Darsié - Psicanalista - Neuromusicologia clinica - Psicanalisi della musica. Membro del Movimento per la ricerca in psicanalisi “Nodi freudiani” di Milano da quindici anni, svolge attività di psicanalista, di neuromusicologa clinica e di consulente filosofico.">
-
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri() ?>/images/icons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri() ?>/images/icons/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri() ?>/images/icons/apple-icon-72x72.png">
