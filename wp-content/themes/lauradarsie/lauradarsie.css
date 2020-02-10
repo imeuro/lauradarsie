@@ -998,3 +998,39 @@ a.privacylink:hover {
 .wp-block-gallery .blocks-gallery-item {
     display: table-cell; /* fix safari vecchi */
 }
+
+
+.ldarsie-private-area {
+    margin: 60px auto;
+    width: auto;
+    border-top: 2px solid #E67765;
+    border-bottom: 2px solid #E67765;
+    padding: 20px;
+}
+.ldarsie-private-area a {
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 10px auto 20px auto;
+    background: #E67765;
+    border: 1px solid #e25943;
+    color: #fff;
+    width: auto;
+    border-radius: 5px;
+    transition: all 150ms ease-in-out;
+}
+.ldarsie-private-area a:hover {
+    text-decoration: none;
+    color: #f1b2a8;
+    background: #e25943;
+    border: 1px solid #E67765;
+}
+.ldarsie-private-content {
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+.ldarsie-private-content.audio-box {
+    border: 1px solid #f1b2a8;
+}
+.ldarsie-private-content.audio-box h2 {
+    margin-top: 0;
+}
