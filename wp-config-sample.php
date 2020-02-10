@@ -14,7 +14,7 @@
  * * Chiavi Segrete
  * * ABSPATH
  *
- * È possibile trovare ultetriori informazioni visitando la pagina del Codex:
+ * È possibile trovare ulteriori informazioni visitando la pagina del Codex:
  *
  * @link https://codex.wordpress.org/it:Modificare_wp-config.php
  *
