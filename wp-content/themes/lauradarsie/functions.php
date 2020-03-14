@@ -123,7 +123,7 @@ function lauradarsie_scripts() {
 
 	wp_enqueue_style( 'lauradarsie-fonts', 'https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap' );
 	wp_enqueue_style( 'lauradarsie-base', get_stylesheet_uri(), array(), '', 'all' );
-	wp_enqueue_style( 'lauradarsie-custom', get_template_directory_uri() . '/lauradarsie.css', array('lauradarsie-base'), 'rsgtdrs', 'all' );
+	wp_enqueue_style( 'lauradarsie-custom', get_stylesheet_directory_uri() . '/lauradarsie.css', array('lauradarsie-base'), 'rsgtdrs', 'all' );
 
 	wp_enqueue_script( 'lauradarsie-custom-js', get_template_directory_uri() . '/js/lauradarsie.js', array(), '20151215', true );
 	wp_enqueue_script( 'lauradarsie-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
