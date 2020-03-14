@@ -734,6 +734,7 @@ li.ldarsie-pagination-page a {
 .site-footer {
     min-height: 40px;
     width: 100%;
+    padding: 10px;
     background: #E67765;
     font-family: PT Serif;
     font-style: normal;
