@@ -274,8 +274,8 @@ button.menu-toggle:hover {
         position: fixed;
         top: 130px;
         left: 0;
-        max-height: 360px;
-        height: 360px;
+        max-height: 400px;
+        height: 400px;
         width: 300px;
         background: transparent;
     }
