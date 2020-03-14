@@ -732,16 +732,19 @@ li.ldarsie-pagination-page a {
 }
 
 .site-footer {
-    height: 40px;
+    min-height: 40px;
     width: 100%;
     background: #E67765;
     font-family: PT Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 40px;
+    line-height: 18px;
     text-align: center;
     color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 a.privacylink {
     color:#fff;
