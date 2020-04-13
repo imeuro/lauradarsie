@@ -59,12 +59,27 @@ function ldarsie_CPT() {
             'pages'                 => true,
             'feeds'                 => true,
         ),
+        'capabilities'        => array(
+			'publish_posts'       => 'edit_posts',
+			'edit_others_posts'   => 'edit_posts',
+			'delete_posts'        => 'edit_posts',
+			'delete_others_posts' => 'edit_posts',
+			'read_private_posts'  => 'edit_posts',
+			'edit_post'           => 'edit_posts',
+			'delete_post'         => 'edit_posts',
+			'read_post'           => 'edit_posts',
+		),
 	);
 	register_post_type( 'ldarsie_eventi', $args );
 
 }
 add_action( 'init', 'ldarsie_CPT', 0 );
 
+
+function add_author_support_to_posts() {
+   add_post_type_support( 'ldarsie_eventi', 'author' ); 
+}
+add_action( 'init', 'add_author_support_to_posts' );
 
 
 function rename_posts() {
