@@ -45,6 +45,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php if ( is_front_page() || is_page('Home Page') ) : ?>
+			
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" alt="Laura Darsie" /></a></h1>
 				<div class="site-heroes">
 					<picture id="site-hero-freud">
@@ -60,6 +61,13 @@
 						<small class="bio-expander">Continua a leggere</small>
 					</a>
 				</section>
+				<div id="social-pad">
+					<ul>
+						<li class="FB_btn"><a href="https://www.facebook.com/lauradarsiepsicanalisi" target="_blank">FB</a></li>
+						<li class="IN_btn"><a href="https://it.linkedin.com/in/laura-darsi%C3%A9-22677231" target="_blank">IN</a></li>
+					</ul>
+				</div>
+
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" alt="Laura Darsie" /></a></p>
 			<?php endif; ?>

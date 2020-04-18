@@ -195,7 +195,7 @@ body.menu-toggled { overflow-y: hidden; }
 .menu-toggle {
     position: fixed;
     z-index: 10;
-    top: 40px;
+    top: 20px;
     right: 10px;
     float: right;
     width: auto;
@@ -448,6 +448,66 @@ button.menu-toggle:hover {
         -webkit-line-clamp: 6;
     }
     .bio-expander { text-align: right; }
+}
+
+#social-pad {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 3;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    opacity: 1;
+    transition: opacity 50ms ease-in-out;
+}
+.site-header.compact #social-pad {
+    opacity: 0;
+}
+
+#social-pad ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+#social-pad li {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+}
+#social-pad .FB_btn a,
+#social-pad .IN_btn a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: url(./images/lauradarsie-FB.svg) no-repeat center center rgba(255,255,255,.75);
+    background-size: 25px;
+    border-radius: 4px;
+    color: #222;
+    text-indent: -9999px;
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+}
+#social-pad .IN_btn a {
+    background: url(./images/lauradarsie-IN.svg) no-repeat center center rgba(255,255,255,.75);
+}
+#social-pad .FB_btn a:hover,
+#social-pad .IN_btn a:hover {
+    opacity: .75;
+}
+
+@media all and (min-width: 600px) {
+    #social-pad {
+        top: 300px;
+        width: 120px;
+    }
+    .site-header.compact #social-pad {
+        opacity: 1;
+    }
 }
 
 
