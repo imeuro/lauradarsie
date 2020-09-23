@@ -209,3 +209,31 @@ function ldarsie_pagination($pages = '', $range = 2)
          echo "</div>\n";
      }
 }
+
+
+
+//////////////
+// MAINTENANCE
+add_action( 'wp_loaded', function() 
+{
+    global $pagenow;
+
+    // - - - - - - - - - - - - - - - - - - - - - - 
+    // Turn on/off you Maintenance Mode (true/false)
+    define('IN_MAINTENANCE', true);
+    // - - - - - - - - - - - - - - - - - - - - - - 
+
+    if(
+        defined( 'IN_MAINTENANCE' )
+        && IN_MAINTENANCE
+        && $pagenow !== 'wp-login.php'
+        && ! is_user_logged_in()
+    ) {
+        header('HTTP/1.1 503 Service Temporarily Unavailable');
+        header( 'Content-Type: text/html; charset=utf-8' );
+        if ( file_exists( get_template_directory() . '/maintenance.php' ) ) {
+            require_once( get_template_directory() . '/maintenance.php' );
+        }
+        die();
+    }
+});
