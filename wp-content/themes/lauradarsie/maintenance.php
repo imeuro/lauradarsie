@@ -74,7 +74,7 @@
 </head>
 <body>
 	<div class="centered">
-		<h1><img src="https://www.lauradarsie.it/pub/email-signature.png" width="350" height="130" alt="Dott.ssa Laura Darsié - Psicanalista" /></h1>
+		
 		<p>il sito è in fase di manutenzione / website currently under maintenance</p>
 	</div>
 </body>
