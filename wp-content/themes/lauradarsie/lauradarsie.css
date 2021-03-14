@@ -27,6 +27,49 @@ input[type="button"] {
     -moz-appearance: none;
 }
 
+
+
+/*--------------------------------------------------------------
+# Lightbox - https://github.com/electerious/basicLightbox
+--------------------------------------------------------------*/
+.basicLightbox{position:fixed;display:flex;justify-content:center;align-items:center;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,.8);opacity:.01;transition:opacity .4s ease;z-index:1000;will-change:opacity}.basicLightbox--visible{opacity:1}.basicLightbox__placeholder{max-width:100%;transform:scale(.9);transition:transform .4s ease;z-index:1;will-change:transform}.basicLightbox__placeholder>iframe:first-child:last-child,.basicLightbox__placeholder>img:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{display:block;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;max-width:95%;max-height:95%}.basicLightbox__placeholder>iframe:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{pointer-events:auto}.basicLightbox__placeholder>img:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{width:auto;height:auto}.basicLightbox--iframe .basicLightbox__placeholder,.basicLightbox--img .basicLightbox__placeholder,.basicLightbox--video .basicLightbox__placeholder{width:100%;height:100%;pointer-events:none}.basicLightbox--visible .basicLightbox__placeholder{transform:scale(1)}
+
+#lightboxCont {
+	max-height:90vh;
+	max-width: 75vw;
+	overflow-y: auto;
+	position:relative;
+	color: #fff;
+}
+#lightboxCont .closebtn {
+	position: fixed;
+    right: 0;
+    top: -35px;
+    background: #000;
+    color: #fff;
+    padding: 2px 21px 2px 8px;
+    border-radius: 2px;
+}
+
+#lightboxCont .closebtn:before, 
+#lightboxCont .closebtn:after {
+    content: "";
+    display: inline-block;
+    border-left: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 13px;
+    right: 2px;
+    padding-left: 10px;
+}
+#lightboxCont .closebtn:after {
+    transform: rotate(-45deg);
+    top: 6px;
+}
+.lightbox {cursor:pointer;}
+
 .obf { unicode-bidi: bidi-override; direction: rtl; } /* scrivi il testo al contrario, poi lo rigira */
 #contactform { padding-top: 120px; }
 
