@@ -9,6 +9,10 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="home-main">
 
+			<section id="promo-project" class="fullcol lightbox">
+				<img src="https://www.lauradarsie.it/pub/gravidanza-e-covid.jpg" width="100%" alt="Gravidanza e Covid-19" />
+			</section>
+
             <section id="site-career" class="fullcol">
                 <h2 class="block-title">Studio di Psicanalisi</h2>
                 <div class="intro-text">

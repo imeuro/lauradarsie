@@ -127,6 +127,7 @@ function lauradarsie_scripts() {
 
 	wp_enqueue_script( 'lauradarsie-custom-js', get_template_directory_uri() . '/js/lauradarsie.js', array(), '20151215', true );
 	wp_enqueue_script( 'lauradarsie-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'lauradarsie-lightbox', get_template_directory_uri() . '/js/basicLightbox.min.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'lauradarsie-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
