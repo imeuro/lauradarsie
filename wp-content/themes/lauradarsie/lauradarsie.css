@@ -1142,9 +1142,11 @@ a.privacylink:hover {
     margin-top: 0;
 }
 
+.promo-iniziativa.hidden-desktop {
 
-@media all and (min-width: 960px){
-    #promo-project {
+}
+@media all and (min-width: 600px){
+    .promo-iniziativa.hidden-mobile {
         position: fixed;
         top: 10px;
         width: 300px;

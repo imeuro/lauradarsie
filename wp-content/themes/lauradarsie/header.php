@@ -72,6 +72,10 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" alt="Laura Darsie" /></a></p>
 			<?php endif; ?>
 
+			<a class="promo-iniziativa fullcol lightbox hidden-mobile">
+				<img src="https://www.lauradarsie.it/pub/gravidanza-e-covid.jpg" width="100%" alt="Gravidanza e Covid" />
+			</a>
+
 			<?php if ( ( is_front_page() || is_page('Home Page') ) || is_page( 'contatti') || is_page('biografia') ) : ?>
 				<p class="site-description"><strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica</p>
 			<?php else : ?>
