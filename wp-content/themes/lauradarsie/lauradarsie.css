@@ -1152,11 +1152,16 @@ a.privacylink:hover {
         width: 300px;
         height: 85px;
         left: 50%;
-        z-index: 1;
+        z-index: 10;
         transform: translate( -50%, 0);
         border: 1px solid #e67765;
         padding: 0;
         margin: 0;
+        transition: width 250ms ease-in-out, height 250ms ease-in-out;
+    }
+    .compact .promo-iniziativa.hidden-mobile {
+        width: 200px;
+        height: 57px;
     }
 }
 
