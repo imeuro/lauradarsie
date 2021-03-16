@@ -1098,3 +1098,23 @@ a.privacylink:hover {
 .ldarsie-private-content.audio-box h2 {
     margin-top: 0;
 }
+
+
+@media all and (min-width: 960px){
+    #promo-project {
+        position: fixed;
+        top: 10px;
+        width: 300px;
+        height: 85px;
+        left: 50%;
+        z-index: 1;
+        transform: translate( -50%, 0);
+        border: 1px solid #e67765;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+
+
