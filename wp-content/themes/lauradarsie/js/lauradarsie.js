@@ -18,7 +18,7 @@ console.log("%c Powered by: Mauro Fioravanzi ",'background:#5285a7;color:#acc4cc
 
 // lightbox covid&gravidanza
 var promoproj = 'gigi';
-let promoboxes = document.querySelectorAll('.promo-project');
+let promoboxes = document.querySelectorAll('.promo-iniziativa');
 Array.from(promoboxes).forEach(function(el){
     el.onclick = () => {
         promoproj = basicLightbox.create(`
