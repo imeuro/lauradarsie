@@ -1142,6 +1142,7 @@ a.privacylink:hover {
     margin-top: 0;
 }
 
+.promo-iniziativa { position: relative; }
 .promo-iniziativa.hidden-desktop {
 
 }
@@ -1163,6 +1164,19 @@ a.privacylink:hover {
     .compact .promo-iniziativa.hidden-mobile {
         width: 200px;
         height: 57px;
+    }
+    .promo-iniziativa #virus {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        width: 42px;
+        height: 42px;
+    }
+    .compact .promo-iniziativa #virus {
+        top: 15%;
+        left: 20%;
+        width: 24px;
+        height: 24px;
     }
 }
 
