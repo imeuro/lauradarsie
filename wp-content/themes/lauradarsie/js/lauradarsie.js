@@ -24,7 +24,7 @@ Array.from(promoboxes).forEach(function(el){
         promoproj = basicLightbox.create(`
             <div id="lightboxCont">
                 <a class="closebtn" onclick="javascript:document.querySelector('.basicLightbox.basicLightbox--visible').click();">CHIUDI</a>
-                <h3 style="text-align: center; font-size: 38px;">Un percorso psicomusicale per affrontare con serenità il desiderio di maternità nell'epoca del coronavirus</h3>
+                <h3 style="text-align: center;font-size: 38px;max-width: 750px;margin: 0 auto;">Un percorso psicomusicale per affrontare con serenità il desiderio di maternità nell'epoca del coronavirus</h3>
                 <p><img src="https://www.lauradarsie.it/pub/desiderare-un-figlio.jpg" width="100%" /></p>
             </div>
         `).show()
