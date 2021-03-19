@@ -73,7 +73,7 @@
 			<?php endif; ?>
 
 			<a class="promo-iniziativa lightbox hidden-mobile">
-				<img src="https://www.lauradarsie.it/pub/gravidanza-e-covid.jpg" width="100%" alt="Gravidanza e Covid" />
+				<img src="https://www.lauradarsie.it/pub/gravidanza-e-covid-2.jpg" width="100%" alt="Gravidanza e Covid" />
 			</a>
 
 			<?php if ( ( is_front_page() || is_page('Home Page') ) || is_page( 'contatti') || is_page('biografia') ) : ?>
