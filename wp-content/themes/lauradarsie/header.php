@@ -73,8 +73,8 @@
 			<?php endif; ?>
 
 			<a class="promo-iniziativa lightbox hidden-mobile">
-				<img src="https://www.lauradarsie.it/pub/gravidanza-e-covid-2.jpg" width="100%" alt="Gravidanza e Covid" />
-				<img class="virus" src="https://www.lauradarsie.it/pub/virus-trasp-low.gif" width="85" height="85" alt="Gravidanza e Covid" />
+				<img src="https://www.lauradarsie.it/pub/gravidanza-e-covid.jpg" width="575" height="160" alt="Maternità e Covid" />
+                <img class="virus" src="https://www.lauradarsie.it/pub/virus-trasp-low.gif" width="85" height="85" alt="Maternità e Covid" />
 			</a>
 
 			<?php if ( ( is_front_page() || is_page('Home Page') ) || is_page( 'contatti') || is_page('biografia') ) : ?>
