@@ -1143,8 +1143,24 @@ a.privacylink:hover {
 }
 
 .promo-iniziativa { position: relative; }
+.promo-iniziativa img { float: left; }
 .promo-iniziativa.hidden-desktop {
+    bottom: -100px;
+}
 
+.promo-iniziativa.hidden-desktop.stayup {
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    left: 0;
+    margin: 0 10px;
+    padding: 0;
+    border: 1px solid #f2bdb5;
+    transition: bottom 300ms linear;
+}
+.promo-iniziativa.hidden-desktop.stayinyourchest {
+    position: relative;
+    bottom: 0;
 }
 .promo-iniziativa .virus {
     position: absolute;
