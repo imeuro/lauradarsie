@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
             promoproj = basicLightbox.create(`
                 <div id="lightboxCont">
                     <a class="closebtn" onclick="javascript:document.querySelector('.basicLightbox.basicLightbox--visible').click();">CHIUDI</a>
-                    <h3 style="text-align: center;font-size: 38px;max-width: 750px;margin: 0 auto;">Un percorso psicomusicale per affrontare con serenità il desiderio di maternità nell'epoca del coronavirus</h3>
-                    <p><img src="https://www.lauradarsie.it/pub/desiderare-un-figlio.jpg" width="100%" /></p>
+                    <h3 style="text-align: center;font-size: clamp(14px, 3vw, 38px);max-width: 750px;margin: 0 auto;">Un percorso psicomusicale per affrontare con serenità il desiderio di maternità nell'epoca del coronavirus</h3>
+                    <p><a href="https://www.lauradarsie.it/pub/desiderare-un-figlio.jpg" target="_blank"><img src="https://www.lauradarsie.it/pub/desiderare-un-figlio.jpg" width="100%" /></a></p>
                 </div>
             `).show()
         }
