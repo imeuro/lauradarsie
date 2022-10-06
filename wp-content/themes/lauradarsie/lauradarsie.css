@@ -460,6 +460,7 @@ button.menu-toggle:hover {
         width: 65px;
         height: 65px;
         background-size: 95px;
+        top: -5px;
     }
     .compact .site-description {
         top: 10px;
