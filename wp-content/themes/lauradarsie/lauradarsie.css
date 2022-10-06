@@ -317,8 +317,8 @@ button.menu-toggle:hover {
         position: fixed;
         top: 130px;
         left: 0;
-        max-height: 400px;
-        height: 400px;
+        max-height: 415px;
+        height: 415px;
         width: 300px;
         background: transparent;
     }
@@ -332,11 +332,11 @@ button.menu-toggle:hover {
         text-align: left;
     }
     .main-navigation ul {
-        margin-top: 25px;
+        margin-top: 10px;
     }
     .main-navigation a {
         margin-bottom: 10px;
-        line-height: 28px;
+        line-height: 26px;
         background: rgba(255,255,255,0.75);
         color: #222;
         width: auto;
@@ -431,7 +431,7 @@ button.menu-toggle:hover {
         margin-top: 0;
         position: absolute;
         right: 0;
-        top: 0;
+        top: -30px;
         width: 100px;
         height: 100px;
         border: 2px solid #E67765;
@@ -442,7 +442,7 @@ button.menu-toggle:hover {
     .site-description {
         position: fixed;
         z-index: 11;
-        top: 20px;
+        top: 40px;
         right: 15px;
         font-size: 16px;
         line-height: 18px;
@@ -501,7 +501,7 @@ button.menu-toggle:hover {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
-    width: 100px;
+    width: 130px;
     opacity: 1;
     transition: opacity 50ms ease-in-out;
 }
@@ -522,7 +522,8 @@ button.menu-toggle:hover {
     padding: 0;
 }
 #social-pad .FB_btn a,
-#social-pad .IN_btn a {
+#social-pad .IN_btn a,
+#social-pad .IG_btn a {
     display: block;
     width: 40px;
     height: 40px;
@@ -538,8 +539,12 @@ button.menu-toggle:hover {
 #social-pad .IN_btn a {
     background: url(./images/lauradarsie-IN.svg) no-repeat center center rgba(255,255,255,.75);
 }
+#social-pad .IG_btn a {
+    background: url(./images/lauradarsie-IG.svg) no-repeat center center rgba(255,255,255,.75);
+}
 #social-pad .FB_btn a:hover,
-#social-pad .IN_btn a:hover {
+#social-pad .IN_btn a:hover,
+#social-pad .IG_btn a:hover {
     opacity: .75;
 }
 
@@ -586,8 +591,20 @@ button.menu-toggle:hover {
         -ms-flex: 0 0 95%;
             flex: 0 0 95%;
 }
-.intro-text p {
+.home-main #site-career {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.home-main #site-career .intro-text { order: 2; }
+.home-main #site-career #intro-image { order: 1; }
+
+.home-main .intro-text p {
     color: #404040;
+    margin: 0;
+}
+#intro-image img {
+    width: 100%;
+    object-fit: cover;
 }
 
 @media all and (min-width: 600px) {
@@ -632,6 +649,11 @@ button.menu-toggle:hover {
                 align-items: center;
         border-bottom: 1px solid #e8e8e8;
     }
+
+    .home-main #site-career { flex-flow: row wrap; }
+    .home-main #site-career .intro-text,
+    .home-main #site-career #intro-image { order: initial; }
+
     #intro-video, 
     #intro-image,
     .intro-text {
@@ -639,6 +661,11 @@ button.menu-toggle:hover {
             -ms-flex: 0 0 45%;
                 flex: 0 0 45%;
     }
+    #intro-image img {
+        height: 210px;
+        object-fit: cover;
+    }
+
 }
 @media all and (min-width: 1440px) {
     #content {

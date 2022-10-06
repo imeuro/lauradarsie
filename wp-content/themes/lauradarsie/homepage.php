@@ -9,11 +9,6 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="home-main">
 
-			<section class="promo-iniziativa fullcol lightbox hidden-desktop">
-                <img src="https://www.lauradarsie.it/pub/gravidanza-e-covid.jpg" width="575" height="160" alt="Maternità e Covid" />
-                <img class="virus" src="https://www.lauradarsie.it/pub/virus-trasp-low.gif" width="85" height="85" alt="Maternità e Covid" />
-            </section>
-
             <section id="site-career" class="fullcol">
                 <h2 class="block-title">Studio di Psicanalisi</h2>
                 <div class="intro-text">
@@ -34,8 +29,8 @@ get_header();
                     );
                     ?>
                     <a href="<?php echo get_permalink( 242 ); ?>">
-                        <figure class="wp-block-video">
-                            <?php echo wp_get_attachment_image( $post_images[0]->ID, 'medium' ); ?>
+                        <figure class="wp-block-image">
+                            <?php echo wp_get_attachment_image( $post_images[0]->ID, 'large' ); ?>
                         </figure>
                     </a>
                 </div>

@@ -63,6 +63,7 @@
 				</section>
 				<div id="social-pad">
 					<ul>
+						<li class="IG_btn"><a href="https://www.instagram.com/laura.darsie/" target="_blank">IG</a></li>
 						<li class="FB_btn"><a href="https://www.facebook.com/lauradarsiepsicanalisi" target="_blank">FB</a></li>
 						<li class="IN_btn"><a href="https://it.linkedin.com/in/laura-darsi%C3%A9-22677231" target="_blank">IN</a></li>
 					</ul>
@@ -72,15 +73,10 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo get_bloginfo( 'name' ); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/lauradarsie-logo.svg" alt="Laura Darsie" /></a></p>
 			<?php endif; ?>
 
-			<a class="promo-iniziativa lightbox hidden-mobile">
-				<img src="https://www.lauradarsie.it/pub/gravidanza-e-covid.jpg" width="575" height="160" alt="Maternità e Covid" />
-                <img class="virus" src="https://www.lauradarsie.it/pub/virus-trasp-low.gif" width="85" height="85" alt="Maternità e Covid" />
-			</a>
-
 			<?php if ( ( is_front_page() || is_page('Home Page') ) || is_page( 'contatti') || is_page('biografia') ) : ?>
-				<p class="site-description"><strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica</p>
+				<p class="site-description"><strong>Psicologa Clinica</strong><br><strong>e Psicanalista</strong></p>
 			<?php else : ?>
-			<p class="site-description hidden-mobile"><strong>Psicanalista</strong><br />Neuromusicologia clinica<br />Psicanalisi della musica</p>
+			<p class="site-description hidden-mobile"><strong>Psicologa Clinica</strong><br><strong>e Psicanalista</strong></p>
 			<?php endif; ?>
 
 		</div><!-- .site-branding -->
