@@ -20,8 +20,16 @@ get_header();
 		 if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">Psicanalisi della musica</h1>
+				<h1 class="page-title"><?php echo $title; ?></h1>
 			</header><!-- .page-header -->
+
+			<?php 
+				if (has_post_thumbnail( $curPage->ID ) ):
+					echo '<div class="post-thumbnail">';
+					the_post_thumbnail();
+					echo '</div>';
+				endif;
+			?>
 
 			<?php
 				global $paged;
