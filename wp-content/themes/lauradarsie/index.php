@@ -26,7 +26,7 @@ get_header();
 			<?php 
 				if (has_post_thumbnail( $curPage->ID ) ):
 					echo '<div class="post-thumbnail">';
-					the_post_thumbnail();
+					the_post_thumbnail($curPage->ID);
 					echo '</div>';
 				endif;
 			?>
