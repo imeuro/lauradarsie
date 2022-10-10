@@ -74,9 +74,9 @@
 			<?php endif; ?>
 
 			<?php if ( ( is_front_page() || is_page('Home Page') ) || is_page( 'contatti') || is_page('biografia') ) : ?>
-				<p class="site-description"><strong>Psicologa Clinica</strong><br><strong>e Psicanalista</strong></p>
+				<p class="site-description"><strong>Psicologa Psicanalista</strong></p>
 			<?php else : ?>
-			<p class="site-description hidden-mobile"><strong>Psicologa Clinica</strong><br><strong>e Psicanalista</strong></p>
+			<p class="site-description hidden-mobile"><strong>Psicologa Psicanalista</strong></p>
 			<?php endif; ?>
 
 		</div><!-- .site-branding -->
