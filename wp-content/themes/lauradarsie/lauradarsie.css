@@ -502,7 +502,7 @@ button.menu-toggle:hover {
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
-    width: 130px;
+    width: 140px;
     opacity: 1;
     transition: opacity 50ms ease-in-out;
 }
@@ -551,8 +551,9 @@ button.menu-toggle:hover {
 
 @media all and (min-width: 600px) {
     #social-pad {
-        top: 300px;
-        width: 120px;
+        top: 80px;
+        right: 120px;
+        width: 140px;
     }
     .site-header.compact #social-pad {
         opacity: 1;
