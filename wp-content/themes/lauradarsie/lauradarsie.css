@@ -317,8 +317,6 @@ button.menu-toggle:hover {
         position: fixed;
         top: 130px;
         left: 0;
-        max-height: 415px;
-        height: 415px;
         width: 300px;
         background: transparent;
     }
@@ -335,8 +333,8 @@ button.menu-toggle:hover {
         margin-top: 10px;
     }
     .main-navigation a {
-        margin-bottom: 10px;
-        line-height: 26px;
+        margin-bottom: 9px;
+        line-height: 25px;
         background: rgba(255,255,255,0.75);
         color: #222;
         width: auto;
