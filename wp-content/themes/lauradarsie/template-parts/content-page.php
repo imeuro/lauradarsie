@@ -14,7 +14,11 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php lauradarsie_post_thumbnail(); ?>
+	<?php 
+		if ($post->post_name !== 'studio-psicanalisi-milano') :
+			lauradarsie_post_thumbnail(); 
+		endif;
+	?>
 
 	<div class="entry-content">
 		<?php
