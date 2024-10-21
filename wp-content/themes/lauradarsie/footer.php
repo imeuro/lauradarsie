@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<small>Copyright <?php echo date("Y"); ?> - Laura Darsié - Tutti i diritti riservati - <a href="/privacy-policy/" class="privacylink">Privacy e Cookie Policy</a></small>
+			<small>Copyright &copy; <?php echo date("Y"); ?> - Laura Darsié - Tutti i diritti riservati - <a href="/privacy-policy/" class="privacylink">Content, Privacy e Cookie Policy</a></small>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
